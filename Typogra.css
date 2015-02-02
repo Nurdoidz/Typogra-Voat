@@ -1,431 +1,275 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700);
+/* imports Open Sans font */
+@import url( http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700 );
 
 /* ! Body
-================================================================================ */
+-------------------------------------------------------------------------------- */
+body {
+    background: url( http://i.imgur.com/7OM2E3w.png ) repeat #EEE;
+    color: #000;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 10px;
+}
 
-    body {
-        background: url(http://i.imgur.com/7OM2E3w.png) repeat #EEE;
-        color: #000;
-        font-family: 'Open Sans',sans-serif;
-        font-size: 10px;
-    }
-
-    /* Text forms */
-    .form-control {font-family: inherit;}
-
-    a {color: #0B2C71;}
-    a:hover {
-        color: #0B2C71;
-        text-decoration: underline;
-    }
-
-
-    /* ! Voting arrows
-    ---------------------------------------------------------------------------- */
-    
-        .arrow-downvote,.arrow-downvoted,.arrow-upvote,.arrow-upvoted {
-            width: 18px;
-            height: 19px;
-            background: url(http://i.imgur.com/lPu9SHs.png);
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        /* Downvote - Link */
-        .arrow-downvote {background-position: 0 0;}
-        .commentarea .arrow-downvote {background-position: 0 -38px;}
-        /* Downvote - Comment */
-        .arrow-downvoted {background-position: 0 -19px;}
-        .commentarea .arrow-downvoted {background-position: 0 -57px;}
-        /* Upvote  - Link */
-        .arrow-upvote {background-position: -18px 0;}
-        .commentarea .arrow-upvote {background-position: -18px -38px;}
-        /* Upvote - Comment */
-        .arrow-upvoted {background-position: -18px -19px;}
-        .commentarea .arrow-upvoted {background-position: -18px -57px;}
-
-
+a { color: #2051B7; }
+a:hover { color: #429FE1; }
+a:visited { color: #2051B7; }
 
 /* ! Header
-================================================================================ */
-
-    #header {
-        background: url(http://i.imgur.com/UzYjq0f.png) repeat-x 50% 0;
+-------------------------------------------------------------------------------- */
+#header { margin: 0; }
+    #header-container,#sr-header-area {
+        background: url( https://i.imgur.com/UzYjq0f.png ) repeat-x 50% 0;
         border: 0;
-        height: 100px !important;
     }
+        #sr-header-area .sr-list { margin-right: 59px; }
+            .sr-list li a {
+                color: #D0D0D0;
+            }
 
+            #sr-bar li a { color: #999; }
+            #sr-header-area:hover #sr-bar li a { color: #D0D0D0; }
 
-    /* ! Header top
-    ---------------------------------------------------------------------------- */
-
-        /* Borders and background */
-        #sr-header-area,#sr-more-link {
+        #sr-more-link {
             background: none;
-            border: 0;
+            color: #CCC;
         }
 
-        
-        /* Text color */
-        #sr-header-area,.sr-bar a,#sr-more-link {color: #FFF;}
-
-        
-        /* Separator */
-        #sr-header-area .separator {visibility: hidden;}
-
-        
-        /* 'My subverses' drop-down */
-        .whoaSubscriptionMenu li ul li a:link, .whoaSubscriptionMenu li ul li a:visited {
-            background-color: #222;
-            border: 0 none;
+        /* ! Header | Sub name
+        -------------------------------------------------------------------------------- */
+        .pagename {
+            font-size: 24px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
         }
-        .whoaSubscriptionMenu li ul li a:hover {background-color: #333;}
-        .whoaSubscriptionMenu li ul {border: 0;}
-
-        
-        /* 'More' link */
-        #sr-header-area .sr-list {margin-right: 60px}
-
-
-    /* ! Header left
-    ---------------------------------------------------------------------------- */
-    
-        #header-bottom-left {
-            margin-top: 0;
-            height: 82px;
-        }
-
-
-        /* ! Header logo
-        ------------------------------------------------------------------------ */
-
-            #header-img {
-                margin: 0 15px 0 0;
-                vertical-align: 16px;
+            .pagename a {
+                color: #E0E0E0;
+                padding: 0;
+                margin: 0 12px;
             }
-
-
-        /* ! Header page name
-        ------------------------------------------------------------------------ */
-
-            .pagename {
-                font-size: 36px;
-                font-variant: normal;
-                font-weight: lighter;
-                line-height: 82px;
-                text-transform: uppercase;
-                letter-spacing: -1px;
-            }
-            .pagename a {color: #FFF;}
             .pagename a:hover {
+                color: #E0E0E0;
                 border-style: solid none;
                 border-width: 2px;
-                border-color: #FFF;
+                border-color: #E0E0E0;
                 text-decoration: none;
             }
 
+        /* ! Header | Tab menu
+        -------------------------------------------------------------------------------- */
+        .tabmenu { font-size: 16px; }
+            .tabmenu li { text-transform: uppercase; }
+                .tabmenu li a {
+                    margin: 0 3px;
+                    padding: 6px 0;
+                }
+                .tabmenu li.disabled a,
+                .tabmenu li.selected a { border: 0; border-radius: 0; }
 
-        /* ! Header tab menu
-        ------------------------------------------------------------------------ */
-
-            .tabmenu {
-                font-size: 150%;
-                line-height: 82px;
-                margin-top: 0;
-            }
-            .tabmenu a:hover {text-decoration: none;}
-            .tabmenu li {text-transform: uppercase;}
-            .tabmenu li:hover {
-                border-style: solid none;
-                border-width: 3px;
-                border-color: #FFF;
-            }
-
-
-            /* ! Header tab menu selected
-            -------------------------------------------------------------------- */
+                .tabmenu li.disabled a {
+                    color: #E0E0E0;
+                }
+                .tabmenu li.disabled a:hover {
+                    color: #E0E0E0;
+                    background: none;
+                    border: 0;
+                    border-style: solid none;
+                    border-width: 2px;
+                    border-color: #E0E0E0;
+                    box-shadow: none;
+                }
 
                 .tabmenu li.selected a {
                     background: none;
                     border: 0;
-                    color: #FFF;
+                    box-shadow: none;
+                    color: #E0E0E0;
                     font-weight: bold;
                 }
-
-
-            /* ! Header tab menu unselected
-            -------------------------------------------------------------------- */
-
-                .tabmenu li a {
-                    background: none;
-                    color: #FFF;
-                    font-weight: normal;
+                .tabmenu li.selected a:hover {
+                    color: #E0E0E0;
+                    border-style: solid none;
+                    border-width: 2px;
+                    border-color: #E0E0E0;
                 }
 
-
-    /* ! Header right
-    ---------------------------------------------------------------------------- */
-
-        #header-bottom-right {
+        /* ! Header | Account
+        -------------------------------------------------------------------------------- */
+        .logged-in {
+            color: #D0D0D0;
             background: none;
-            top: 18px;
-            width: auto;
-            height: 24px;
-            text-align: right;
+            border: 0;
             border-radius: 0;
-            line-height: 16px;
-            right: 10px;
-            text-transform: uppercase;
         }
-        #header-bottom-right a {
-            color: #FFF;
-        }
+            #header-account a { color: #D0D0D0; }
 
-        
-        /* Separators */
-        #header-bottom-right .separator {
-            margin: 0;
-            visibility: hidden;
-        }
+            #header-account .separator {
+                margin: 0;
+                visibility: hidden;
+            }
 
-        
-        /* IKP */
-        #header-bottom-right .user {
-            color: #FFF;
-        }
-        #header-bottom-right .userkarma {
-            font-weight: normal;
-        }
+/* ! Container
+-------------------------------------------------------------------------------- */
+#container {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
 
-
-
-/* ! Sidebar
-================================================================================ */
-
+    /* ! Container | Sidebar
+    -------------------------------------------------------------------------------- */
     .side {
-        background: url(http://i.imgur.com/76lSlYC.png) #FFF;
-        border-color: #AAA;
-        border-style: none none dotted dotted;
+        background: url( http://i.imgur.com/76lSlYC.png ) #FFF;
         border-width: 1px;
-        font-size: 12px;
+        border-style: none dotted dotted dotted;
+        border-color: #AAA;
         margin: 0;
-        padding: 0 20px 10px;
+        padding: 20px;
         width: 340px;
     }
 
-
-    /* ! Sidebar search
-    ---------------------------------------------------------------------------- */
-
-        /* Black box */
+        /* ! Container | Sidebar | Search
+        -------------------------------------------------------------------------------- */
         .side .form-horizontal {
-            background: url(http://i.imgur.com/H2SAgdc.png) repeat #222;
-            border: 0;
+            background: url( http://i.imgur.com/H2SAgdc.png ) repeat #222;
             color: #EEE;
-            margin-bottom: 30px;
-            margin: 20px -20px 10px;
-            padding-bottom: 10px;
-            padding-top: 20px;
-            padding: 20px 20px;
+            margin: 0 -20px 10px;
+            padding: 20px;
         }
-
-            /* Search form */
             .side .form-control {
                 background: none;
-                border-color: #888;
+                border: 0;
                 border-radius: 0;
+                border-width: 2px;
                 border-style: none none solid;
-                color: inherit;
-                font-size: 150%;
+                border-color: #999;
+                color: #D0D0D0;
                 font-style: italic;
                 margin-bottom: 5px;
                 padding: 0;
                 transition: none;
             }
             .side .form-control:focus {
-                border-color: #555;
-                box-shadow: none;
-                color: inherit;
+                border-color: #D0D0D0;
             }
-            
-            .side .form-control::-moz-placeholder {
-                color: transparent;
-                font-family: inherit;
+            .side .form-horizontal label { font-size: 10px; }
+
+        /* ! Container | Sidebar | Submission info
+        -------------------------------------------------------------------------------- */
+        .alert-h2 {
+            border-width: 1px;
+            border-color: #999;
+            color: #EEE;
+        }
+            .titlebox.submissioninfo a { color: #9DCDFF; }
+            .titlebox.submissioninfo a:hover {
+                color: #9DCDFF;
+                text-decoration: underline;
             }
 
-            
-            /* 'Limit the search' label */
-            .side label {
-                color: inherit;
-                font-weight: normal;
-                font-size: 110%;
-            }
-
-
-    /* ! Sidebar buttons
-    ---------------------------------------------------------------------------- */
-
-        /* 'Share a link' and 'Start a discussion' */
+        /* ! Container | Sidebar | Buttons
+        -------------------------------------------------------------------------------- */
         .side .btn-whoaverse {
             background: none;
-            border-color: transparent;
             border-radius: 0;
-            border-style: none none solid;
             border-width: 2px;
+            border-style: none none solid;
+            border-color: transparent;
             box-shadow: none;
-            color: #333;
-            font-family: inherit;
-            font-size: 125%;
             font-weight: bold;
             letter-spacing: 2px;
             padding: 3px 0;
-            text-align: center;
             text-transform: uppercase;
         }
-        .side .btn-whoaverse:hover {
-            background: none;
-            border-color: #333;
-            color: #333;
-            text-decoration: none;
-        }
+            .side a.btn-whoaverse { color: #444; }
+        .side .btn-whoaverse:hover { border-color: #555; }
 
-
-    /* ! Sidebar titlebox
-    ---------------------------------------------------------------------------- */
-
-        /* Blue box */
+        /* ! Container | Sidebar | Titlebox
+        -------------------------------------------------------------------------------- */
         .titlebox {
-            background: url(http://i.imgur.com/8KEkEXv.png) repeat #0B2C71;
-            border: 0;
-            -moz-box-shadow: 0 0 10px rgba(0,0,0,0.7) inset;
-            -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.7) inset;
-            box-shadow: 0 0 10px rgba(0,0,0,0.7) inset;
+            background: url( http://i.imgur.com/8KEkEXv.png ) repeat #0B2C71;
+            box-shadow: 0 0 10px hsla( 0,0%,0%,0.7 ) inset;
             color: #EEE;
-            font-size: inherit;
-            margin-left: -20px;
-            margin-right: -20px;
-            margin-top: 10px;
+            margin: 10px -20px 0;
             padding: 30px 20px;
+            width: initial !important;
         }
-
-        .titlebox a {color: inherit;}
-        .titlebox a:hover {color: inherit;}
-
-
-        /* ! Sidebar titlebox page name
-        ------------------------------------------------------------------------ */
-
-            .titlebox h1 {
+            .titlebox > h1 {
                 border-bottom: 1px solid #999;
-                font-size: 225%;
-                font-weight: lighter;
+                font-size: 22px;
+                font-weight: normal;
                 letter-spacing: -1px;
-                margin-bottom: 20px;
-                padding-bottom: 10px;
+                margin: 0 0 20px;
+                padding: 0 0 10px;
                 text-align: center;
                 text-transform: uppercase;
             }
+                .titlebox h1 a:hover { color: inherit; }
 
-            .titlebox h1 a {color: inherit;}
-
-            .titlebox h1 a:hover {
-                color: inherit;
-                text-decoration: none;
-            }
-
-        
-        /* ! Sidebar titlebox subscribe
-        ------------------------------------------------------------------------ */
-
-            /* Button */
             .side .btn-whoaverse-paging {
                 background: none;
-                border-color: transparent;
+                border: 0;
                 border-radius: 0;
-                border-style: none none solid;
                 border-width: 2px;
+                border-style: none none solid;
+                border-color: transparent;
                 box-shadow: none;
-                color: inherit;
                 display: block;
-                font-family: inherit;
-                font-size: 125%;
+                font-size: 12px;
                 font-weight: bold;
                 letter-spacing: 2px;
                 margin-bottom: 5px;
-                padding: 3px 0;
-                text-shadow: none;
+                padding: 3px;
                 text-transform: uppercase;
                 width: 100%;
             }
-            .side .btn-whoaverse-paging:hover {
-                background: none;
-                border-color: #EEE;
-                color: inherit;
-            }
+            .side .btn-whoaverse-paging:hover { border-color: #EEE; }
 
-            
-            /* Name of subscribers */
             .titlebox .subscribers {
                 display: block;
                 margin-bottom: 20px;
                 text-align: center;
             }
 
-            .titlebox .users-online {display: none;}
+            .titlebox .users-online { display: none; }
 
+            .titlebox .md { padding-bottom: 20px; }
+                .titlebox .md a { color: #9DCDFF; }
 
-        /* ! Sidebar titlebox description
-        ---------------------------------------------------------------------------- */
-
-            .titlebox .md {
-                font-size: 110%;
-                padding-bottom: 20px;
-                line-height: 175%;
-            }
-
-            .titlebox .md a {text-decoration: underline;}
-
-            
-                /* Headings */
-                .titlebox .md h1,.titlebox .md h2,.titlebox .md h3,.titlebox .md h4,
-                .titlebox .md h5,.titlebox .md h6 {
+                .titlebox .md h1,
+                .titlebox .md h2,
+                .titlebox .md h3,
+                .titlebox .md h4,
+                .titlebox .md h5,
+                .titlebox .md h6 {
                     border: 0;
-                    font-family: inherit;
-                    font-size: 130%;
                     font-weight: bold;
-                    line-height: 150%;
-                    margin: 0;
-                    padding: 0;
                     text-align: center;
-                    text-transform: none;
                 }
+                .titlebox .md h1 { font-size: 18px; }
+                .titlebox .md h2 { font-size: 16px; }
+                .titlebox .md h3 { font-size: 15px; }
+                .titlebox .md h4,
+                .titlebox .md h5,
+                .titlebox .md h6 { font-size: 14px; }
 
-            
-            /* ! Sidebar titlebox subverse origin
-            -------------------------------------------------------------------- */
+            .titlebox .bottom {
+                color: inherit;
+                border-top: 1px solid #999;
+                padding: 10px 0 0;
+            }
+                .titlebox .bottom a { color: #9DCDFF; }
 
-                .titlebox .bottom {
-                    color: inherit;
-                    border-color: #999;
-                    padding-top: 10px;
-                    padding-bottom: 0;
-                }
-
-                .titlebox .bottom a {font-style: italic;}
-
-
-    /* ! Sidebar moderators
-    ---------------------------------------------------------------------------- */
-
-        /* Message the moderators */
+        /* ! Container | Sidebar | Moderators
+        -------------------------------------------------------------------------------- */
         .sidecontentbox a.helplink {
-            border-color: transparent;
-            border-style: none none solid;
             border-width: 2px;
-            color: #333;
+            border-style: none none solid;
+            border-color: transparent;
+            color: #444;
             display: block;
             float: none;
-            font-size: 125%;
+            font-size: 12px;
             font-weight: bold;
             letter-spacing: 2px;
             margin-bottom: 20px;
@@ -433,552 +277,174 @@
             text-align: center;
             text-transform: uppercase;
         }
-        .sidecontentbox a.helplink:hover {
-            border-color: #333;
-            text-decoration: none;
-        }
+        .sidecontentbox a.helplink:hover { border-color: #444; }
 
-        
-        /* Titles */
-        .side .title {
-            padding-top: 20px;
-        }
-        .sidecontentbox .title h1 {
-            color: inherit;
-            display: inline;
-            font-size: 140%;
-            line-height: 100%;
-        }
-
-        
-        /* Moderator list */
-        .side .content {
-            background: none;
-            border: 0;
-            padding: 5px 0;
-            font-size: 125%;
-        }
-        .side .flat-vert a {background: none;}
-
-        .side .content a {
-            color: inherit;
-            font-style: italic;
-        }
-
-
-    /* ! Sidebar submission info
-    ---------------------------------------------------------------------------- */
-
-        /* Area */
-        .titlebox.submissioninfo {
-            background: none;
-            box-shadow: none;
-            color: inherit;
-            margin: 30px 0;
-            padding: 0;
-        }
-
-            /* Titles */
-            .submissioninfo h2 {
-                color: inherit;
-                font-size: 140%;
-                text-transform: uppercase;
-            }
-
-            
-            /* Descriptions */
-            .submissioninfo .bottom {
+        .side .title { padding-top: 8px; }
+            .side .title h1.alert-h1 {
+                font-size: 15px;
                 border: 0;
-                color: inherit;
-                font-style: normal;
-                margin-bottom: 30px;
-                padding: 0;
-            }
-            .submissioninfo .bottom a {
-                color: inherit;
-                font-style: italic;
-            }
-            .submissioninfo .bottom a:hover {color: inherit;}
-            .submissioninfo .h6 {
-                font-size: 140%;
-            }
-
-
-
-/* ! Links
-================================================================================ */
-
-    /* Content box */
-    .content {
-        background: url(http://i.imgur.com/76lSlYC.png) #FFF;
-        border-color: #AAA;
-        border-style: none dotted dotted none;
-        border-width: 1px;
-        margin: 0 350px 0 0;
-        padding: 0 10px 25px;
-    }
-
-        /* Link list */
-        .sitetable.linklisting {
-            border-top: 1px dotted #aaa;
-        }
-
-            /* Link */
-            .link {
-                border-color: #AAA;
-                border-style: none none dotted;
-                border-width: 1px;
-                margin: 0;
-                padding: 20px 0;
-            }
-
-
-    /* ! Link rank
-    ---------------------------------------------------------------------------- */
-
-        .link .rank {
-            color: #555;
-            font-family: inherit;
-            font-size: 100%;
-            margin: 22px 0 0;
-        }
-
-
-    /* ! Link votes
-    ---------------------------------------------------------------------------- */
-
-        /* Area */
-        .link .midcol {
-            font-size: inherit;
-            font-weight: normal;
-            margin: 0 10px;
-            width: 35px;
-        }
-
-            /* Number */
-            .link .score {
-                color: #999;
-                font-size: 150%;
-                font-style: normal;
+                color: #444;
                 font-weight: bold;
+                margin-bottom: 2px;
+                padding: 2px;
             }
 
-            .link .score.likes,.link .score.dislikes {color: #333;}
-
-
-    /* ! Link title
-    ---------------------------------------------------------------------------- */
-
-        .link .title {
-            color: #333;
-            font-size: 150%;
-            font-weight: bold;
-            letter-spacing: -1px;
-            line-height: 20px;
-        }
-        .link .title:hover {
-            color: #0B2C71;
-            text-decoration: none;
-        }
-
-        /* Link thumbnail */
-        .thumbnail {
+        .sidecontentbox ul.content,
+        .sidecontentbox .content {
             background: none;
             border: 0;
-            margin-right: 5px;
+            border-top: 1px solid #AAA;
+            margin-top: 5px;
+            padding-top: 5px;
         }
-
-
-    /* ! Link domain
-    ---------------------------------------------------------------------------- */
-
-        .title .domain {
-            font-size: 100%;
-            font-weight: normal;
-
-        }
-
-
-    /* ! Link tagline
-    ---------------------------------------------------------------------------- */
-
-        .link .tagline {
-            color: #333;
-            font-size: 140%;
-        }
-        .link .tagline a {
-            color: inherit;
-            font-style: italic;
-        }
-
-            /* Vote ratio */
-            .link .commentvotesratio {color: #777;}
-
-            .link .tagline .post_upvotes {
-                color: inherit;
-                font-weight: bold;
-            }
-
-            .link .tagline .post_downvotes {
-                color: inherit;
-                font-weight: normal;
-            }
-
-
-    /* ! Link expando button
-    ------------------------------------------------------------------------ */
     
-        .expando-button.selftext.collapsed,
-        .expando-button.selftext.collapsed:hover,
-        .expando-button.selftext.expanded,
-        .expando-button.selftext.expanded:hover {
-            background-repeat: no-repeat;
-            background: url(http://i.imgur.com/lPu9SHs.png);
-            height: 26px;
-            width: 26px;
-        }
-        
-        .expando-button {
-            height: 26px;
-            width: 26px;
-        }
-        
-        /* Collapsed */
-        .expando-button.selftext.collapsed {background-position: -36px 0;}
-        .expando-button.selftext.collapsed:hover {background-position: -36px -26px;}
-
-
-
-    /* ! Link action list
-    ---------------------------------------------------------------------------- */
-
-        .link .flat-list {
-            font-size: 140%;
-            font-style: italic;
-            padding: 0;
-        }
-
-        .link .buttons li a {
-            color: #555;
-            font-weight: normal;
-        }
-
-
-
-/* ! Link page
-================================================================================ */
-
-    .link .usertext .md {
-        background: none;
-        border-radius: 0;
-        border: 1px dashed #AAA;
-        color: #222;
-        font-size: 110%;
-        line-height: 175%;
-    }
-
-    .link .usertext .md p,.side .md p {margin:10px 0;}
-
-    
-    /* ! Link page headings
-    ---------------------------------------------------------------------------- */
-
-        .content .md h1 {
-            border-bottom: 1px solid #AAA;
-            font-size: 150%;
-            font-weight: bold;
-            letter-spacing: -1px;
-            line-height: 100%;
-            margin-bottom: 10px;
-            padding-bottom: 3px;
-        }
-
-        .content .md h2 {
-            color: inherit;
-            font-size: 125%;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-            line-height: 100%;
-            margin-bottom: 10px;
-        }
-
-        .content .md h3,.content .md h4,.content .md h5,.content .md h6 {
-            font-size: 110%;
-            font-style: italic;
-            font-weight: bold;
-            line-height: 100%;
-            margin-bottom: 10px;
-        }
-
-
-
-    /* ! Link page comments
+    /* ! Container | Sitetable
     -------------------------------------------------------------------------------- */
-
-        .commenttextarea,.commentarea .form-control,.well .form-control {
-            background: none;
-            border-radius: 0;
-            border: 1px dotted #AAA;
-            box-shadow: none;
-            color: inherit;
-            font-family: inherit;
-            font-size: 125%;
-            line-height: 150%;
+    .content {
+        background: url( http://i.imgur.com/76lSlYC.png ) #FFF;
+        border-width: 1px;
+        border-style: none dotted dotted;
+        border-color: #AAA;
+        margin: 0 350px 0 0;
+        padding: 20px 20px 25px;
+    }
+        .link {
+            border: 0;
+            border-width: 1px;
+            border-style: none none dashed;
+            border-color: #AAA;
+            padding: 12px 0;
         }
-        .commenttextarea:focus {border: 1px dotted #AAA;}
-
-        .commentarea {font-size: 110%;}
-
-        
-        /* Comment form */
-        .content form .btn-whoaverse-medium,.well .btn-whoaverse {
-            background: none;
-            border-color: transparent;
-            border-radius: 0;
-            border-style: none none solid;
-            border-width: 2px;
-            box-shadow: none;
-            color: #333;
-            font-family: inherit;
-            font-size: 125%;
-            font-weight: bold;
-            letter-spacing: 2px;
-            padding: 3px 0;
-            text-transform: uppercase;
-            width: 40%;
-        }
-        .content form .btn-whoaverse-medium:hover,.well .btn-whoaverse:hover {
-            background: none;
-            border-color: #333;
-            color: #333;
-        }
-        .commentarea .form-control {margin-top: 10px;}
-
-        
-        /* Horizontal rule */
-        .content hr {visibility: hidden;}
-
-        
-        /* Voting arrows */
-        .comment .midcol {
-            margin-right: 10px;
-            margin-top: 3px;
-        }
-
-        
-        /* Comment author */
-        .comment a.author {color: #444;}
-        .comment .author {
-            font-size: 120%;
-            font-style: italic;
-            font-weight: normal;
-        }
-            /* Mod */
-            .tagline .moderator {
-                color: inherit;
-                font-weight: bold;
+            .link .rank {
+                color: #999;
+                font-size: 11px;
             }
-            /* Submitter */
-            .tagline .submitter {color: #111;}
 
-        
-        /* Score */
-        .comment .score {font-size: inherit;}
+            .thumbnail { border-radius: 0; }
 
-        
-        /* Comment */
-        .comment .md {color: #222;}
+            .link .title {
+                font-weight: bold;
+                letter-spacing: -1px;
+            }
+            .link .title:hover { color: #2051B7; }
+                .link .title .domain {
+                    letter-spacing: 0;
+                    font-weight: normal;
+                }
+                    .link .title .domain a {
+                        color: #2051B7;
+                        margin: 0 2px;
+                    }
+                    .link .title .domain a:hover { color: #429FE1; }
 
-            /* Paragraph spacing */
-            .commentarea .md p {margin: 7px 0;}
+            .link .tagline a { color: #2051B7; }
 
-        
-        /* Comment actions */
-        .comment .buttons li a {
-            color: #555;
-            font-style: italic;
-            font-weight: normal;
-        }
+            .link .usertext .md {
+                background: none;
+                box-shadow: none;
+                border: 1px dotted #AAA;
+                color: #333;
+            }
 
-        
-        /* Reply form buttons */
-        .commentarea .btn-whoaverse-paging,.pagination-container .btn-whoaverse-paging {
-            background: none;
-            border-color: transparent;
-            border-radius: 0;
-            border-style: none none solid;
-            border-width: 2px;
-            box-shadow: none;
-            color: #555;
-            font-family: inherit;
-            font-size: 110%;
-            margin: 5px;
-            padding: 0;
-            text-transform: uppercase;
-        }
-        .commentarea .btn-whoaverse-paging {
-            border-color: #555;
-        }
-
-
-
-/* ! Submission page
-================================================================================ */
-
-    .well {
+    /* ! Container | Comments
+    -------------------------------------------------------------------------------- */
+    .content form > .btn-whoaverse-paging {
         background: none;
         border: 0;
         border-radius: 0;
+        border-width: 2px;
+        border-style: none none solid;
+        border-color: transparent;
         box-shadow: none;
-        color: #222;
-        margin: 0;
-        max-width: 700px;
-        width: 100%;
+        color: #444;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 3px 0;
+        text-transform: uppercase;
+        margin-right: 16px;
+    }
+    .content form > .btn-whoaverse-paging:hover { border-color: #555; }
+        .commenttextarea { margin-top: 10px; }
+
+    .comment a.submitter,
+    .comment a.author.submitter { color: #2051B7; }
+    .comment a.submitter:hover,
+    .comment a.author.submitter:hover {
+        color: #429FE1;
+        text-decoration: none;
     }
 
-        /* Heading */
+    .comment a.author { color: #333; }
+    .comment a.author:hover {
+        color: #2051B7;
+        text-decoration: none;
+    }
+
+    /* ! Container | Submission form
+    -------------------------------------------------------------------------------- */
+    .well {
+        background: none;
+        border: 0;
+        color: #333;
+    }
         .alert-info {
             background: none;
+            border: 0;
+            border-radius: 0;
             border-bottom: 1px dotted #AAA;
-            color: inherit;
-            font-family: inherit;
-            font-size: 175%;
+            font-size: 16px;
             font-weight: bold;
             letter-spacing: -1px;
             padding: 10px;
         }
 
-        
-        /* Form labels */
-        .well label {
-            color: inherit;
-            font-size: 135%;
-            font-style: italic;
-            font-weight: normal;
-        }
-
-        
-        /* Button */
-        .well .btn-whoaverse {width: auto;}
-
-        
-        /* Popular choices: ... */
-        .col-md-9 {
-            font-size: 120%;
-            font-style: italic;
-        }
-
-        
-        /* Formatting help */
-        .panel {
+        .btn-whoaverse {
+            background: none;
             border: 0;
+            border-radius: 0;
+            border-width: 2px;
+            border-style: none none solid;
+            border-color: transparent;
             box-shadow: none;
+            color: #444;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding: 3px 0;
+            text-transform: uppercase;
+            margin-right: 16px;
         }
-
-            /* Title */
-            .panel-default > .panel-heading {
-                background: none;
-                border-bottom: 1px dotted #AAA;
-                color: inherit;
-                padding: 10px;
-            }
-
-            .panel-title {
-                font-size: 175%;
-                font-weight: bold;
-                letter-spacing: -1px;
-            }
-            .panel-title a:hover {text-decoration: none;}
-
-
-            /* Table */
-            .panel-default > .panel-heading + .panel-collapse > .panel-body {
-                border: 0;
-            }
-
-            .panel-body {
-                font-size: 130%;
-            }
-
-            .table > thead > tr.info > th {background-color: transparent;}
-            .table-striped > tbody > tr:nth-child(2n+1) > td {
-                background: none;
-                border: 0;
-            }
-            .table > thead > tr > th, .table > tbody > tr > td {
-                border: 0;
-            }
-            .table-hover > tbody > tr:hover > td {
-                background: none;
-            }
-            tr.info {
-                border-bottom: 1px dotted #AAA;
-            }
-
-
+        .btn-whoaverse:hover {
+            background: none;
+            border-color: #555;
+        }
 
 /* ! Footer
-================================================================================ */
+-------------------------------------------------------------------------------- */
+.footer:before {
+    color: #CCC;
+    content: "/v/Typogra theme";
+    display: block;
+    font-size: 15px;
+    margin: 0 0 15px;
+}
+.footer {
+    background: url( http://i.imgur.com/H2SAgdc.png ) repeat #222;
+    box-shadow: 0 0 10px #000 inset;
+    color: #DDD;
+    padding: 20px;
+    width: 100%;
+}
+    .footer a { color: #429FE1; }
+    .footer a:hover { color: #429FE1; }
 
-    /* Branding */
-    .footer:before {
-        color: inherit;
-        content: "/v/Typogra theme";
-        display: block;
-        font-size: 150%;
-        margin: 0 0 15px;
-    }
-
-
-    .footer {
-        -moz-box-shadow: 0 0 10px #000 inset;
-        -webkit-box-shadow: 0 0 10px #000 inset;
-        background: url(http://i.imgur.com/H2SAgdc.png) repeat #222;
-        box-shadow: 0 0 10px #000 inset;
-        color: #DDD;
-        padding: 20px;
-    }
-
-    .footer a {
-        color: inherit;
-        font-style: italic;
-    }
-    .footer a:hover {color: inherit;}
-
-        .footer .bottommenu {
-            color: inherit;
-            font-size: 100%;
-        }
-
-
+    .footer .bottommenu { color: #DDD; }
 
 /* ! Mobile
-================================================================================ */
-
-    @media (min-width: 1200px) {
-        .side {width: 400px;}
-        .content {margin-right: 410px;}
+-------------------------------------------------------------------------------- */
+@media ( max-width: 870px ) { .content { margin-right: 0; } }
+@media ( max-width: 700px ) {
+    .tabmenu li.disabled a {
+        background: none;
+        box-shadow: none;
     }
-    @media (max-width: 950px) {
-        .pagename {display: none;}
-    }
-    @media (max-width: 780px) {
-        .side {display: none;}
-        .content {margin-right: 0;}
-    }
-    @media (max-width: 780px) {
-        #header-img {display: none;}
-    }
-    @media (max-width: 530px) {
-        .tabmenu {font-size: 125%;}
-        .tabmenu li {margin: 0;}
-    }
-    @media (max-width: 480px) {
-        .content form .btn-whoaverse-medium {width: 100%;}
-    }
-    @media (max-width: 420px) {
-        .tabmenu {font-size: 110%;}
-    }
-
-
-
+}
