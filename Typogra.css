@@ -247,6 +247,7 @@ a:visited { color: #317FB7; }
                 box-shadow: none;
                 border-radius: 3px;
                 display: block;
+                color: #EEE;
                 font-size: 12px;
                 font-weight: bold;
                 letter-spacing: 2px;
@@ -264,6 +265,7 @@ a:visited { color: #317FB7; }
                 border: 0;
                 border-bottom: 2px solid #A45A1A;
                 box-shadow: 0 1px 2px hsla( 0,0%,0%,0.5 );
+                color: #EEE;
             }
 
             .titlebox .subscribers {
@@ -326,6 +328,12 @@ a:visited { color: #317FB7; }
             background:      -o-linear-gradient( top,#FCFCFC,#E1E1E1 );
             border-color: #DDD;
             box-shadow: 0 1px 2px hsla( 0,0%,0%,0.6 );
+        }
+
+        .side .spacer.spacersection {
+            background: none;
+            border: 0;
+            border-radius: 0;
         }
 
         .side .title { padding-top: 8px; }
@@ -425,7 +433,7 @@ a:visited { color: #317FB7; }
         color: #FFF;
         font-weight: bold;
         letter-spacing: 1px;
-        padding: 6px 8px;
+        padding: 4px 8px;
         text-transform: uppercase;
         margin-right: 8px;
     }
@@ -479,9 +487,23 @@ a:visited { color: #317FB7; }
             border-top: 1px solid #D3D3D3;
         }
 
-        .comment .comment {
+        .comment .comment { padding: 4px 0 4px 8px; }
+
+        .comment .comment .comment,
+        .comment .comment .comment .comment .comment,
+        .comment .comment .comment .comment .comment .comment .comment,
+        .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+        .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+        .comment .comment,
+        .comment .comment .comment .comment,
+        .comment .comment .comment .comment .comment .comment,
+        .comment .comment .comment .comment .comment .comment .comment .comment,
+        .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+            border: 0;
             border-left: 1px solid #BCBCBC;
+            border-radius: 0;
             box-shadow: -1px 0 0 #FDFDFD;
+            background: none;
         }
 
     /* ! Container | Submission form
@@ -545,7 +567,90 @@ a:visited { color: #317FB7; }
 
 /* ! Mobile
 -------------------------------------------------------------------------------- */
-@media ( max-width: 870px ) { .content { margin-right: 0; } }
+@media ( max-width: 870px ) {
+    .content { margin-right: 0; }
+    #container {
+        padding-top: 50px;
+    }
+
+    .side {
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+    }
+
+    .side .form-control {
+        visibility: visible;
+        position: absolute;
+        left: 1%;
+        top: -36px;
+        width: 35%;
+        background: none;
+        border: 2px solid #333;
+    }
+
+    .side .titlebox {
+        visibility: visible;
+        position: absolute;
+        left: 37%;
+        top: -31px;
+        background: none;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+    .side .titlebox.submissioninfo {
+        display: none;
+    }
+
+    .side .titlebox h1 {
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0 10px 0 0;
+        display: inline-block;
+        border: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .side .subscribers {
+        font-size: 11px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 0 4px;
+        text-align: left;
+    }
+
+    .side .subscribers .word {
+        display: none;
+    }
+
+    .side .titlebox .users-online {
+        display: none;
+    }
+
+    .side .titlebox .md,
+    .side .titlebox .bottom {
+        display: none;
+    }
+
+    .side .btn-whoaverse-paging {
+        display: inline-block;
+        width: auto;
+        background: #FF8821;
+        background: -webkit-linear-gradient( top,#FF8821,#CF6E1A );
+        background:    -moz-linear-gradient( top,#FF8821,#CF6E1A );
+        background:     -ms-linear-gradient( top,#FF8821,#CF6E1A );
+        background:      -o-linear-gradient( top,#FF8821,#CF6E1A );
+        border: 0;
+        border-bottom: 2px solid #A45A1A;
+        box-shadow: 0 1px 2px hsla( 0,0%,0%,0.5 );
+        color: #EEE;
+        padding: 1px 4px;
+    }
+}
 @media ( max-width: 700px ) {
     .tabmenu li.disabled a {
         background: none;
