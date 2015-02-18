@@ -1,8 +1,8 @@
 /* ! Body
 -------------------------------------------------------------------------------- */
 body {
-    background: url( http://i.imgur.com/7OM2E3w.png ) repeat #EEE;
-    color: #000;
+    background: url( https://i.imgur.com/7OM2E3w.png ) repeat #EEE;
+    color: #333;
     font-family: 'Liberation Sans',Arial,sans-serif;
     font-size: 10px;
 }
@@ -11,10 +11,41 @@ a { color: #317FB7; }
 a:hover { color: #429FE1; }
 a:visited { color: #317FB7; }
 
+.md a:hover { text-decoration: underline; }
+
+/* Default button style */
+.btn-whoaverse {
+    background: #FF8821;
+    background: -webkit-linear-gradient( top,#FF8821,#CF6E1A );
+    background:    -moz-linear-gradient( top,#FF8821,#CF6E1A );
+    background:     -ms-linear-gradient( top,#FF8821,#CF6E1A );
+    background:      -o-linear-gradient( top,#FF8821,#CF6E1A );
+    border: 0;
+    border-bottom: 2px solid #A45A1A;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px hsla( 0,0%,0%,0.6 );
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+.btn-whoaverse:hover {
+    background: #FF9B44;
+    background: -webkit-linear-gradient( top,#FF9B44,#D77A29 );
+    background:    -moz-linear-gradient( top,#FF9B44,#D77A29 );
+    background:     -ms-linear-gradient( top,#FF9B44,#D77A29 );
+    background:      -o-linear-gradient( top,#FF9B44,#D77A29 );
+    border-bottom: 2px solid #A45A1A;
+}
+    a.btn-whoaverse,
+    a.btn-whoaverse:hover { color: #FFF; }
+
 /* ! Header
 -------------------------------------------------------------------------------- */
 #header {
-    background: url(http://i.imgur.com/wc7qUVc.png) 50% 50%;
+    background: url( https://i.imgur.com/wc7qUVc.png ) 50% 50%;
     height: 200px;
     margin: 0;
 }
@@ -31,6 +62,9 @@ a:visited { color: #317FB7; }
 
             #sr-bar li a { color: #999; }
             #sr-header-area:hover #sr-bar li a { color: #D0D0D0; }
+
+            /* Menu drop arrow icon */
+            .drop-arrow { border-color: #D0D0D0 transparent transparent; }
 
         #sr-more-link {
             background: none;
@@ -152,7 +186,7 @@ a:visited { color: #317FB7; }
     /* ! Container | Sidebar
     -------------------------------------------------------------------------------- */
     .side {
-        background: url( http://i.imgur.com/76lSlYC.png ) #FFF;
+        background: url( https://i.imgur.com/76lSlYC.png ) #FFF;
         border-width: 1px;
         border-style: none solid solid;
         border-color: #D7D7D7;
@@ -164,7 +198,7 @@ a:visited { color: #317FB7; }
         /* ! Container | Sidebar | Search
         -------------------------------------------------------------------------------- */
         .side .form-horizontal {
-            background: url( http://i.imgur.com/H2SAgdc.png ) repeat #222;
+            background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
             color: #EEE;
             margin: 0 -20px 10px;
             padding: 20px;
@@ -222,7 +256,7 @@ a:visited { color: #317FB7; }
         /* ! Container | Sidebar | Titlebox
         -------------------------------------------------------------------------------- */
         .titlebox {
-            background: url( http://i.imgur.com/H2SAgdc.png ) repeat #222;
+            background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
             color: #EEE;
             margin: 10px -20px 0;
             padding: 30px 20px;
@@ -262,7 +296,6 @@ a:visited { color: #317FB7; }
                 background:    -moz-linear-gradient( top,#FF8821,#CF6E1A );
                 background:     -ms-linear-gradient( top,#FF8821,#CF6E1A );
                 background:      -o-linear-gradient( top,#FF8821,#CF6E1A );
-                border: 0;
                 border-bottom: 2px solid #A45A1A;
                 box-shadow: 0 1px 2px hsla( 0,0%,0%,0.5 );
                 color: #EEE;
@@ -334,6 +367,7 @@ a:visited { color: #317FB7; }
             background: none;
             border: 0;
             border-radius: 0;
+            padding: 0;
         }
 
         .side .title { padding-top: 8px; }
@@ -377,6 +411,9 @@ a:visited { color: #317FB7; }
                 color: #999;
                 font-size: 11px;
             }
+
+            /* Arrow score */
+            .link .score { color: #999; }
 
             .thumbnail { border-radius: 0; }
 
@@ -444,7 +481,8 @@ a:visited { color: #317FB7; }
         background:     -ms-linear-gradient( top,#FF9B44,#D77A29 );
         background:      -o-linear-gradient( top,#FF9B44,#D77A29 );
     }
-        .commenttextarea {
+        .commenttextarea,
+        .well .form-control {
             box-shadow: 0 1px 2px hsla( 0,0%,0%,0.2 ) inset;
             margin-top: 10px;
         }
@@ -524,26 +562,6 @@ a:visited { color: #317FB7; }
             padding: 10px;
         }
 
-        .btn-whoaverse {
-            background: none;
-            border: 0;
-            border-radius: 0;
-            border-width: 2px;
-            border-style: none none solid;
-            border-color: transparent;
-            box-shadow: none;
-            color: #444;
-            font-weight: bold;
-            letter-spacing: 2px;
-            padding: 3px 0;
-            text-transform: uppercase;
-            margin-right: 16px;
-        }
-        .btn-whoaverse:hover {
-            background: none;
-            border-color: #555;
-        }
-
 /* ! Footer
 -------------------------------------------------------------------------------- */
 .footer:before {
@@ -554,7 +572,7 @@ a:visited { color: #317FB7; }
     margin: 0 0 15px;
 }
 .footer {
-    background: url( http://i.imgur.com/H2SAgdc.png ) repeat #222;
+    background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
     box-shadow: 0 0 10px #000 inset;
     color: #DDD;
     padding: 20px;
