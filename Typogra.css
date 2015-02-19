@@ -11,7 +11,7 @@ a { color: #317FB7; }
 a:hover { color: #429FE1; }
 a:visited { color: #317FB7; }
 
-.md a:hover { text-decoration: underline; }
+.md a:hover { text-decoration: none; }
 
 /* Default button style */
 .btn-whoaverse {
@@ -41,6 +41,24 @@ a:visited { color: #317FB7; }
 }
     a.btn-whoaverse,
     a.btn-whoaverse:hover { color: #FFF; }
+
+/* Voting sprites */
+.arrow-upvote,
+.arrow-upvoted,
+.arrow-downvote,
+.arrow-downvoted,
+.comment .arrow-upvote,
+.comment .arrow-upvoted,
+.comment .arrow-downvote,
+.comment .arrow-downvoted {
+    background: url( https://i.imgur.com/CY5zE5z.png );
+    height: 16px;
+    width: 16px;
+}
+    .arrow-upvote,.comment .arrow-upvote       { background-position: 0     0; }
+    .arrow-upvoted,.comment .arrow-upvoted     { background-position: -32px 0; }
+    .arrow-downvote,.comment .arrow-downvote   { background-position: -16px 0; }
+    .arrow-downvoted,.comment .arrow-downvoted { background-position: -48px 0; }
 
 /* ! Header
 -------------------------------------------------------------------------------- */
@@ -341,7 +359,7 @@ a:visited { color: #317FB7; }
         /* ! Container | Sidebar | Moderators
         -------------------------------------------------------------------------------- */
         .sidecontentbox a.helplink {
-            border: 1px solid transparent;
+            border-bottom: 2px solid transparent;
             color: #444;
             display: block;
             float: none;
@@ -359,7 +377,7 @@ a:visited { color: #317FB7; }
             background:    -moz-linear-gradient( top,#FCFCFC,#E1E1E1 );
             background:     -ms-linear-gradient( top,#FCFCFC,#E1E1E1 );
             background:      -o-linear-gradient( top,#FCFCFC,#E1E1E1 );
-            border-color: #DDD;
+            border-color: #C3C3C3;
             box-shadow: 0 1px 2px hsla( 0,0%,0%,0.6 );
         }
 
@@ -414,14 +432,21 @@ a:visited { color: #317FB7; }
 
             /* Arrow score */
             .link .score { color: #999; }
+                .link .score.likes    { color: #CF6E1A; }
+                .link .score.dislikes { color: #333; }
+
+            .scorebar-likes    { background: #999; }
+            .scorebar-dislikes { background: #333; }
 
             .thumbnail { border-radius: 0; }
 
             .link .title:hover { color: #317FB7; }
                 .link a.title.may-blank {
-                    color: #317FB7;
-                    font-weight: normal;
+                    color: #444;
+                    font-weight: bold;
                 }
+                .link a.title.may-blank:visited { color: #5A3F77; }
+                .link a.title.may-blank:hover { color: #429FE1; }
 
                 .link .title .domain {
                     letter-spacing: 0;
@@ -439,6 +464,10 @@ a:visited { color: #317FB7; }
                 font-size: 13px;
             }
             .link .tagline a { color: #317FB7; }
+                .tagline .post_upvotes   { color: #277CCB; }
+                .tagline .post_downvotes { color: #333; }
+
+                .link a.author.may-blank { color: #277CCB; }
 
             .link .usertext .md {
                 background: #FFF;
@@ -506,8 +535,8 @@ a:visited { color: #317FB7; }
             text-decoration: none;
         }
 
-        .comment a.author { color: #333; }
-        .comment a.author:hover {
+        .comment a.author.may-blank { color: #333; }
+        .comment a.author.may-blank:hover {
             color: #317FB7;
             text-decoration: none;
         }
@@ -543,6 +572,8 @@ a:visited { color: #317FB7; }
             box-shadow: -1px 0 0 #FDFDFD;
             background: none;
         }
+
+        .comment.thread > .comment.child { margin-left: 33px; }
 
     /* ! Container | Submission form
     -------------------------------------------------------------------------------- */
