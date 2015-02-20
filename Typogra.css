@@ -51,7 +51,7 @@ a:visited { color: #317FB7; }
 .comment .arrow-upvoted,
 .comment .arrow-downvote,
 .comment .arrow-downvoted {
-    background: url( https://i.imgur.com/CY5zE5z.png );
+    background: url( https://i.imgur.com/FkVltzs.png );
     height: 16px;
     width: 16px;
 }
@@ -432,10 +432,10 @@ a:visited { color: #317FB7; }
 
             /* Arrow score */
             .link .score { color: #999; }
-                .link .score.likes    { color: #CF6E1A; }
+                .link .score.likes    { color: #326DE8; }
                 .link .score.dislikes { color: #333; }
 
-            .scorebar-likes    { background: #999; }
+            .scorebar-likes    { background: #4883FF; }
             .scorebar-dislikes { background: #333; }
 
             .thumbnail { border-radius: 0; }
@@ -464,7 +464,7 @@ a:visited { color: #317FB7; }
                 font-size: 13px;
             }
             .link .tagline a { color: #317FB7; }
-                .tagline .post_upvotes   { color: #277CCB; }
+                .tagline .post_upvotes   { color: #326DE8; }
                 .tagline .post_downvotes { color: #333; }
 
                 .link a.author.may-blank { color: #277CCB; }
