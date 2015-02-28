@@ -3,7 +3,7 @@
 body {
     background: url( https://i.imgur.com/7OM2E3w.png ) repeat #EEE;
     color: #333;
-    font-family: 'Liberation Sans',Arial,sans-serif;
+    font-family: 'Roboto',Arial,sans-serif;
     font-size: 10px;
 }
 
@@ -11,7 +11,12 @@ a { color: #317FB7; }
 a:hover { color: #429FE1; }
 a:visited { color: #317FB7; }
 
+.md a { color: #277CCB; }
 .md a:hover { text-decoration: none; }
+    pre,
+    code {
+        background: #F5F5F5;
+    }
 
 /* Default button style */
 .btn-whoaverse {
@@ -441,6 +446,14 @@ a:visited { color: #317FB7; }
             .thumbnail { border-radius: 0; }
 
             .link .title:hover { color: #317FB7; }
+                .promoted {
+                    background: #5A5A5A;
+                    border: 1px solid #242424;
+                    color: #EEE;
+                    font-size: 8px;
+                    text-transform: uppercase;
+                }
+
                 .link a.title.may-blank {
                     color: #444;
                     font-weight: bold;
@@ -481,8 +494,11 @@ a:visited { color: #317FB7; }
                 color: #333;
                 margin: 2px;
             }
+                .link .usertext .md a:hover { text-decoration: underline; }
 
             .link .flat-list { font-size: 12px; }
+
+        .even { background: none; }
 
     /* ! Container | Comments
     -------------------------------------------------------------------------------- */
@@ -500,7 +516,6 @@ a:visited { color: #317FB7; }
         font-weight: bold;
         letter-spacing: 1px;
         padding: 4px 8px;
-        text-transform: uppercase;
         margin-right: 8px;
     }
     .content form > .btn-whoaverse-paging:hover {
@@ -545,6 +560,8 @@ a:visited { color: #317FB7; }
             color: #757575;
             font-size: 12px;
         }
+
+        .comment .md a:hover { text-decoration: underline; }
 
         .comment .flat-list {
             display: block;
