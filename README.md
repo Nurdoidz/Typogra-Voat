@@ -1,8 +1,8 @@
 # Typogra
 
-Typogra is a free theme for subverses on [WhoaVerse](http://whoaverse.com). The style is based on typography and focuses on whitespace and minimal graphics. Here is a preview:
+Typogra is a free theme for subverses on [Voat](https://voat.co). The style is based on typography and focuses on whitespace and minimal graphics. Here is a preview:
 
-![Preview](http://i.imgur.com/8RcWgDO.png "Preview of theme on a mock-up")
+![Preview](http://i.imgur.com/cnr9DWp.png "Preview of theme on a mock-up")
 
 # How to Install
 
