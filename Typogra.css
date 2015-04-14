@@ -953,7 +953,7 @@ textarea { border-color: #888; }
             background: none !important;
             border: 0 !important;
         }
-            .highlightedComment.comment .entry {
+            .highlightedComment.comment > .entry {
                 background: #FFF;
                 background: -webkit-linear-gradient( top,#FFF,#F7F7F7 );
                 background:    -moz-linear-gradient( top,#FFF,#F7F7F7 );
