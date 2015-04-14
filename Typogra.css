@@ -383,6 +383,11 @@ textarea { border-color: #888; }
             #sr-bar li a { color: #999; }
             #sr-header-area:hover #sr-bar li a { color: #D0D0D0; }
 
+        #header-img {
+            background: url( https://i.imgur.com/Yc8q9AO.png );
+            padding-left: 112px;
+        }
+
         #sr-more-link:hover {
             color: #FFF;
             background: #317FB7;
@@ -716,6 +721,15 @@ textarea { border-color: #888; }
             background:      -o-linear-gradient( top,#FCFCFC,#E1E1E1 );
             border-color: #C3C3C3;
             box-shadow: 0 1px 2px hsla( 0,0%,0%,0.6 );
+        }
+
+        /* chat */
+        .accordion {
+            background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
+            color: #EEE;
+            margin: 10px -20px 0;
+            padding: 20px 20px 10px;
+            width: auto !important;
         }
 
         .side .spacer.spacersection {
