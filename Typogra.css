@@ -875,7 +875,8 @@ textarea { border-color: #888; }
         border-color: #15327A;
     }
         .commenttextarea,
-        .well .form-control {
+        .well .form-control,
+        .comment .form-control {
             box-shadow: 0 1px 2px hsla( 0,0%,0%,0.2 ) inset;
             margin-top: 10px;
             background: #FFF;
@@ -933,6 +934,20 @@ textarea { border-color: #888; }
             margin: 8px 0 0 14px;
         }
 
+        /* highlighted comments */
+        .highlightedComment {
+            background: none !important;
+            border: 0 !important;
+        }
+            .highlightedComment.comment .entry {
+                background: #FFF;
+                background: -webkit-linear-gradient( top,#FFF,#F7F7F7 );
+                background:    -moz-linear-gradient( top,#FFF,#F7F7F7 );
+                background:     -ms-linear-gradient( top,#FFF,#F7F7F7 );
+                background:      -o-linear-gradient( top,#FFF,#F7F7F7 );
+                border: 2px solid #818181;
+            }
+
         .comment .comment .comment,
         .comment .comment .comment .comment .comment,
         .comment .comment .comment .comment .comment .comment .comment,
@@ -944,7 +959,7 @@ textarea { border-color: #888; }
         .comment .comment .comment .comment .comment .comment .comment .comment,
         .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
             border: 0;
-            border-left: 1px solid #BCBCBC;
+            border-left: 1px solid #BCBCBC !important;
             border-radius: 0;
             box-shadow: -1px 0 0 #FDFDFD;
             background: none;
