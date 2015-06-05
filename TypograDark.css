@@ -3,8 +3,8 @@
 @import url( https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic );
 
 body {
-    background: url( https://i.imgur.com/7OM2E3w.png ) repeat #EEE;
-    color: #333;
+    background: url( https://i.imgur.com/cQxllB7.png ) repeat #1E1E1E;
+    color: #D5D5D5;
     font-family: 'Roboto',Arial,sans-serif;
     font-size: 10px;
 }
@@ -47,27 +47,27 @@ code {
 /* (END) Markdown */
 
 /* (START) Temporary night mode compatibility */
-.modal-content { background: #FFF; }
+.modal-content { background: #333; }
 .modal-header {
-    background: #4AABE7;
-    background: -webkit-linear-gradient( top,#69C0F5,#4AABE7 );
-    background:    -moz-linear-gradient( top,#69C0F5,#4AABE7 );
-    background:     -ms-linear-gradient( top,#69C0F5,#4AABE7 );
-    background:      -o-linear-gradient( top,#69C0F5,#4AABE7 );
-    border-bottom: 2px solid #4C9FD2;
+    background: #438DB7;
+    background: -webkit-linear-gradient( top,#438DB7,#3E81A8 );
+    background:    -moz-linear-gradient( top,#438DB7,#3E81A8 );
+    background:     -ms-linear-gradient( top,#438DB7,#3E81A8 );
+    background:      -o-linear-gradient( top,#438DB7,#3E81A8 );
+    border-bottom: 2px solid #377396;
 }
 .modal-title { color: #FFF; }
 .modal-body label.control-label {
-    background: #4AABE7;
-    background: -webkit-linear-gradient( top,#69C0F5,#4AABE7 );
-    background:    -moz-linear-gradient( top,#69C0F5,#4AABE7 );
-    background:     -ms-linear-gradient( top,#69C0F5,#4AABE7 );
-    background:      -o-linear-gradient( top,#69C0F5,#4AABE7 );
-    border-bottom: 2px solid #4C9FD2;
+    background: #438DB7;
+    background: -webkit-linear-gradient( top,#438DB7,#3E81A8 );
+    background:    -moz-linear-gradient( top,#438DB7,#3E81A8 );
+    background:     -ms-linear-gradient( top,#438DB7,#3E81A8 );
+    background:      -o-linear-gradient( top,#438DB7,#3E81A8 );
+    border-bottom: 2px solid #377396;
     color: #FFF;
 }
-.modal-body .col-md-4 input.form-control:focus { border-color: #4C9FD2; }
-.modal-footer { border-top: 1px solid #D6D6D6; }
+.modal-body .col-md-4 input.form-control:focus { border-color: #377396; }
+.modal-footer { border-top: 1px solid #252525; }
 .md a[href="#s"]::after {
     background: #E77777;
     color: #E77777;
@@ -393,7 +393,7 @@ textarea { border-color: #888; }
 
     #header-container,
     #sr-header-area {
-        background: url( https://i.imgur.com/UzYjq0f.png ) repeat;
+        background: url( https://i.imgur.com/iGhWm8v.png ) repeat #272727;
         border: 0;
     }
         #sr-header-area .selected a { color: #317FB7; }
@@ -567,10 +567,10 @@ textarea { border-color: #888; }
     /* ! Container | Sidebar
     -------------------------------------------------------------------------------- */
     .side {
-        background: url( https://i.imgur.com/76lSlYC.png ) repeat #FFF;
+        background: url( https://i.imgur.com/oo9I0OR.png ) repeat #272727;
         border-width: 1px;
         border-style: none solid solid;
-        border-color: #D7D7D7;
+        border-color: #141414;
         margin: 0;
         padding: 20px;
         width: 340px;
@@ -579,10 +579,12 @@ textarea { border-color: #888; }
         /* ! Container | Sidebar | Search
         -------------------------------------------------------------------------------- */
         .side .form-horizontal {
-            background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
+            background: url( https://i.imgur.com/VgZAC3B.png ) repeat #191919;
             color: #EEE;
             margin: 0 -20px 10px;
             padding: 20px;
+            border-bottom: 1px solid #141414;
+            border-top: 1px solid #141414;
         }
             .side .form-control {
                 background: hsla( 0,0%,0%,0.5 );
@@ -594,7 +596,7 @@ textarea { border-color: #888; }
                 padding: 3px;
                 transition: background 0.25s ease in-out;
             }
-            .side .form-control:focus { border-color: #D681FF; }
+            .side .form-control:focus { border-color: #8F4FAE; }
             .side .form-horizontal label { font-size: 10px; }
 
         /* ! Container | Sidebar | Submission info
@@ -623,25 +625,28 @@ textarea { border-color: #888; }
             padding: 6px 0;
             text-transform: uppercase;
         }
-            .side a.btn-whoaverse { color: #444; }
+            .side a.btn-whoaverse { color: #EDEDED; }
         .side .btn-whoaverse:hover {
-            background: #FCFCFC;
-            background: -webkit-linear-gradient( top,#FCFCFC,#E1E1E1 );
-            background:    -moz-linear-gradient( top,#FCFCFC,#E1E1E1 );
-            background:     -ms-linear-gradient( top,#FCFCFC,#E1E1E1 );
-            background:      -o-linear-gradient( top,#FCFCFC,#E1E1E1 );
-            border-color: #C3C3C3;
-            box-shadow: 0 1px 2px hsla( 0,0%,0%,0.6 );
+            background: #2780BF;
+            background: -webkit-linear-gradient( top,#2780BF,#17659C );
+            background:    -moz-linear-gradient( top,#2780BF,#17659C );
+            background:     -ms-linear-gradient( top,#2780BF,#17659C );
+            background:      -o-linear-gradient( top,#2780BF,#17659C );
+            border-bottom: 2px solid #154A70;
+            box-shadow: 0 1px 2px hsla( 0,0%,0%,0.5 );
+            color: #DDD;
         }
 
         /* ! Container | Sidebar | Titlebox
         -------------------------------------------------------------------------------- */
         .titlebox {
-            background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
+            background: url( https://i.imgur.com/VgZAC3B.png ) repeat #191919;
             color: #EEE;
             margin: 10px -20px 0;
             padding: 30px 20px;
             width: auto !important;
+            border-bottom: 1px solid #141414;
+            border-top: 1px solid #141414;
         }
             .titlebox > h1 {
                 border-bottom: 1px solid #999;
@@ -672,14 +677,14 @@ textarea { border-color: #888; }
                 width: 100%;
             }
             .side .btn-whoaverse-paging:hover {
-                background: #47B1FC;
-                background: -webkit-linear-gradient( top,#47B1FC,#3797DC );
-                background:    -moz-linear-gradient( top,#47B1FC,#3797DC );
-                background:     -ms-linear-gradient( top,#47B1FC,#3797DC );
-                background:      -o-linear-gradient( top,#47B1FC,#3797DC );
-                border-bottom: 2px solid #266C9D;
+                background: #2780BF;
+                background: -webkit-linear-gradient( top,#2780BF,#17659C );
+                background:    -moz-linear-gradient( top,#2780BF,#17659C );
+                background:     -ms-linear-gradient( top,#2780BF,#17659C );
+                background:      -o-linear-gradient( top,#2780BF,#17659C );
+                border-bottom: 2px solid #154A70;
                 box-shadow: 0 1px 2px hsla( 0,0%,0%,0.5 );
-                color: #EEE;
+                color: #DDD;
             }
 
             .titlebox .subscribers {
@@ -724,7 +729,7 @@ textarea { border-color: #888; }
         .sidecontentbox a.helplink {
             border-bottom: 2px solid transparent;
             border-radius: 3px;
-            color: #444;
+            color: #EDEDED;
             display: block;
             float: none;
             font-size: 12px;
@@ -736,13 +741,14 @@ textarea { border-color: #888; }
             text-transform: uppercase;
         }
         .sidecontentbox a.helplink:hover {
-            background: #FCFCFC;
-            background: -webkit-linear-gradient( top,#FCFCFC,#E1E1E1 );
-            background:    -moz-linear-gradient( top,#FCFCFC,#E1E1E1 );
-            background:     -ms-linear-gradient( top,#FCFCFC,#E1E1E1 );
-            background:      -o-linear-gradient( top,#FCFCFC,#E1E1E1 );
-            border-color: #C3C3C3;
-            box-shadow: 0 1px 2px hsla( 0,0%,0%,0.6 );
+            background: #2780BF;
+            background: -webkit-linear-gradient( top,#2780BF,#17659C );
+            background:    -moz-linear-gradient( top,#2780BF,#17659C );
+            background:     -ms-linear-gradient( top,#2780BF,#17659C );
+            background:      -o-linear-gradient( top,#2780BF,#17659C );
+            border-bottom: 2px solid #154A70;
+            box-shadow: 0 1px 2px hsla( 0,0%,0%,0.5 );
+            color: #DDD;
         }
 
         .titlebox form.toggle,
@@ -754,11 +760,13 @@ textarea { border-color: #888; }
 
         /* chat */
         .accordion {
-            background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
+            background: url( https://i.imgur.com/VgZAC3B.png ) repeat #191919;
             color: #EEE;
             margin: 10px -20px 0;
             padding: 20px 20px 10px;
             width: auto !important;
+            border-bottom: 1px solid #141414;
+            border-top: 1px solid #141414;
         }
 
         .side .spacer.spacersection {
@@ -772,7 +780,7 @@ textarea { border-color: #888; }
             .side .title h1.alert-h1 {
                 font-size: 15px;
                 border: 0;
-                color: #444;
+                color: #E4E4E4;
                 font-weight: bold;
                 margin-bottom: 2px;
                 padding: 2px;
@@ -782,7 +790,7 @@ textarea { border-color: #888; }
         .sidecontentbox .content {
             background: none;
             border: 0;
-            border-top: 1px solid #AAA;
+            border-top: 1px solid #111;
             margin-top: 5px;
             padding-top: 5px;
         }
@@ -802,9 +810,9 @@ textarea { border-color: #888; }
             border: 0;
             border-width: 1px;
             border-style: none none solid;
-            border-color: #BCBCBC;
+            border-color: #111;
             padding: 16px 0;
-            box-shadow: 0 1px 0 #F7F7F7;
+            box-shadow: 0 1px 0 #2A2A2A;
         }
         .link:last-child {
             border: 0;
@@ -823,7 +831,13 @@ textarea { border-color: #888; }
             .scorebar-likes    { background: #4883FF; }
             .scorebar-dislikes { background: #333; }
 
-            .thumbnail { border-radius: 0; }
+            .thumbnail {
+                border-radius: 0;
+                border-color: #0C0C0C;
+            }
+            a.thumbnail:hover,
+            a.thumbnail:focus,
+            a.thumbnail:active { border-color: #2780BF; }
 
             .link .title:hover { color: #317FB7; }
                 .promoted {
@@ -835,10 +849,10 @@ textarea { border-color: #888; }
                 }
 
                 .link a.title.may-blank {
-                    color: #444;
+                    color: #ADADAD;
                     font-weight: bold;
                 }
-                .link a.title.may-blank:visited { color: #5A3F77; }
+                .link a.title.may-blank:visited { color: #636363; }
                 .link a.title.may-blank:hover { color: #317FB7; }
 
                 .link .title .domain {
@@ -853,7 +867,7 @@ textarea { border-color: #888; }
                     .link .title .domain a:hover { color: #317FB7; }
 
             .link .tagline {
-                color: #6C6C6C;
+                color: #8D8D8D;
                 font-size: 13px;
             }
             .link .tagline a { color: #317FB7; }
@@ -922,22 +936,28 @@ textarea { border-color: #888; }
         .comment .form-control {
             box-shadow: 0 1px 2px hsla( 0,0%,0%,0.2 ) inset;
             margin-top: 10px;
-            background: #FFF;
-            border-color: #CBCBCB;
+            background: #191919;
+            border-bottom: 1px solid #2D2D2D;
+            border-top: none;
+            border-left: none;
+            border-right: none;
             color: #333;
         }
         .commenttextarea:focus,
-        .form-control:focus { border-color: #999; }
+        .form-control:focus {
+            border-color: #2C2C2C;
+            background: #171717;
+        }
         .form-control::-moz-placeholder,
         .form-control:-ms-input-placeholder,
         .form-control::-webkit-input-placeholder { color: #777; }
 
     .comment .entry {
-        background: #FFF;
-        background: -webkit-linear-gradient( top,#FFF,#F7F7F7 );
-        background:    -moz-linear-gradient( top,#FFF,#F7F7F7 );
-        background:     -ms-linear-gradient( top,#FFF,#F7F7F7 );
-        background:      -o-linear-gradient( top,#FFF,#F7F7F7 );
+        background: #292929;
+        background: -webkit-linear-gradient( top,#292929,#252525 );
+        background:    -moz-linear-gradient( top,#292929,#252525 );
+        background:     -ms-linear-gradient( top,#292929,#252525 );
+        background:      -o-linear-gradient( top,#292929,#252525 );
         box-shadow: 0 1px 2px hsla( 0,0%,0%,0.2 );
         border-radius: 3px;
         margin: 2px;
@@ -983,12 +1003,12 @@ textarea { border-color: #888; }
             border: 0 !important;
         }
             .highlightedComment.comment > .entry {
-                background: #FFF;
-                background: -webkit-linear-gradient( top,#FFF,#F7F7F7 );
-                background:    -moz-linear-gradient( top,#FFF,#F7F7F7 );
-                background:     -ms-linear-gradient( top,#FFF,#F7F7F7 );
-                background:      -o-linear-gradient( top,#FFF,#F7F7F7 );
-                border: 2px solid #818181;
+                background: #292929;
+                background: -webkit-linear-gradient( top,#292929,#252525 );
+                background:    -moz-linear-gradient( top,#292929,#252525 );
+                background:     -ms-linear-gradient( top,#292929,#252525 );
+                background:      -o-linear-gradient( top,#292929,#252525 );
+                border: 2px solid #17659C;
             }
 
         .comment .comment .comment,
@@ -1002,9 +1022,9 @@ textarea { border-color: #888; }
         .comment .comment .comment .comment .comment .comment .comment .comment,
         .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
             border: 0;
-            border-left: 1px solid #BCBCBC !important;
+            border-left: 1px solid #111 !important;
             border-radius: 0;
-            box-shadow: -1px 0 0 #FDFDFD;
+            box-shadow: -1px 0 0 #272727;
             background: none;
         }
 
@@ -1046,7 +1066,7 @@ textarea { border-color: #888; }
     margin: 0 0 15px;
 }
 .footer {
-    background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
+    background: url( https://i.imgur.com/oo9I0OR.png ) repeat #272727;
     box-shadow: 0 0 10px #000 inset;
     color: #DDD;
     padding: 20px;
