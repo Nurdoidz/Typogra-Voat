@@ -861,6 +861,7 @@ textarea { border-color: #888; }
                 .tagline .post_downvotes { color: #333; }
 
                 .link a.author.may-blank { color: #277CCB; }
+                .link a.subverse.may-blank { color: #277CCB; }
 
                 .link a.subverse:hover {
                     color: #317FB7;
