@@ -882,6 +882,13 @@ textarea { border-color: #888; }
             }
                 .link .usertext .md a:hover { text-decoration: underline; }
 
+                .link .usertext .md pre,
+                .link .usertext .md code {
+                    color: #333;
+                    border: 1px solid #CCC;
+                    background: #F5F5F5;
+                }
+
             .link .flat-list { font-size: 12px; }
                 .link .flat-list li a { color: #6A6A6A; }
 
@@ -1041,7 +1048,7 @@ textarea { border-color: #888; }
 -------------------------------------------------------------------------------- */
 .footer:before {
     color: #CCC;
-    content: "/v/Typogra theme";
+    content: "/v/Typogra theme"; /* Do not remove! */
     display: block;
     font-size: 15px;
     margin: 0 0 15px;
