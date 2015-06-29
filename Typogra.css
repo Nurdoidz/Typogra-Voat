@@ -267,7 +267,7 @@ body.dark {
 .comment .arrow-upvoted,
 .comment .arrow-downvote,
 .comment .arrow-downvoted {
-    background: url( http://i.imgur.com/iki7MB2.png );
+    background: url( https://i.imgur.com/iki7MB2.png );
     height: 16px;
     width: 16px;
 }
@@ -287,7 +287,7 @@ body.dark {
 .expando-button.selftext.expanded:hover,
 .expando-button.selftext.loading,
 .expando-button.selftext.loading:hover {
-    background: url( http://i.imgur.com/iki7MB2.png );
+    background: url( https://i.imgur.com/iki7MB2.png );
     height: 16px;
     width: 16px;
 }
@@ -1257,7 +1257,7 @@ body.dark {
     .expando-button.selftext.expanded:hover,
     .expando-button.selftext.loading,
     .expando-button.selftext.loading:hover {
-        background: url( http://i.imgur.com/iki7MB2.png );
+        background: url( https://i.imgur.com/iki7MB2.png );
         height: 32px;
         width: 32px;
     }
