@@ -1,0 +1,14 @@
+/* Banner Image
+ * ------------
+ * Changes the header banner image. Replace 'IMAGE_URL' with the direct URL to
+ * an image. Recommended dimensions: 2000 by 200 pixels.
+ */
+
+#header {
+    background: url( IMAGE_URL );
+    height: 200px;
+}
+
+
+
+

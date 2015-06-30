@@ -1,0 +1,22 @@
+/* Noise backgrounds
+ * -----------------
+ * Changes all of the backgrounds equipped with a noise texture. Delete any lines
+ * that aren't going to be customized. Replace the following:
+ *  - 'BODY_BACKGROUND_URL': The entire page background.
+ *  - 'HEADER_STRIP_URL':    Top subverse list and tab menu backgrounds.
+ *  - 'SIDEBAR_URL':         The entire sidebar background.
+ *  - 'SEARCH_SECTION_URL':  The search box strip background on the sidebar.
+ *  - 'SUB_DESCRIPTION_URL': The subverse description box background.
+ *  - 'FOOTER_URL':          The footer background.
+ */
+
+body                              { background: url( BODY_BACKGROUND_URL ) repeat; }
+#header-container,#sr-header-area { background: url( HEADER_STRIP_URL    ) repeat; }
+.side                             { background: url( SIDEBAR_URL         ) repeat; }
+.side .form-horizontal            { background: url( SEARCH_SECTION_URL  ) repeat; }
+.titlebox                         { background: url( SUB_DESCRIPTION_URL ) repeat; }
+.footer                           { background: url( FOOTER_URL          ) repeat; }
+
+
+
+

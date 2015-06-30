@@ -1,0 +1,15 @@
+/* Font
+ * ----
+ * Changes the theme font. Replace the following:
+ *  - 'GOOGLE_FONTS_URL': The CSS URL that Google Fonts gives you.
+ *  - 'FONT':             The font name. Surround with quotation marks if the
+ *                        font has spaces.
+ */
+
+@import url( GOOGLE_FONTS_URL );
+
+body { font-family: FONT,sans-serif; }
+
+
+
+
