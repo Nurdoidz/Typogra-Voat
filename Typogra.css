@@ -62,9 +62,6 @@ body {
 }
 
 .side .btn-whoaverse {
-    background: none;
-    border: 0;
-    border-bottom: 2px solid transparent;
     box-shadow: none;
     border-radius: 3px;
     font-weight: bold;
@@ -77,13 +74,9 @@ body {
 }
 
 .side .btn-whoaverse-paging {
-    background: none;
-    border: 0;
-    border-bottom: 2px solid transparent;
     box-shadow: none;
     border-radius: 3px;
     display: block;
-    color: #EEE;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -649,7 +642,12 @@ body.dark {
 
 .dark   .side a.btn-whoaverse { color: #D5D5D5; }
 
-.dark .side .btn-whoaverse:hover {
+.dark   .side .btn-whoaverse {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
+}
+.dark   .side .btn-whoaverse:hover {
     background: #2780BF;
     background: -webkit-linear-gradient( top,#2780BF,#17659C );
     background:    -moz-linear-gradient( top,#2780BF,#17659C );
@@ -659,7 +657,13 @@ body.dark {
     color: #DDD;
 }
 
-.dark .side .btn-whoaverse-paging:hover {
+.dark   .side .btn-whoaverse-paging {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: #EEE;
+}
+.dark   .side .btn-whoaverse-paging:hover {
     background: #2780BF;
     background: -webkit-linear-gradient( top,#2780BF,#17659C );
     background:    -moz-linear-gradient( top,#2780BF,#17659C );
@@ -669,11 +673,11 @@ body.dark {
     color: #DDD;
 }
 
-.dark .sidecontentbox a.helplink {
+.dark   .sidecontentbox a.helplink {
     border-bottom: 2px solid transparent;
     color: #EDEDED;
 }
-.dark .sidecontentbox a.helplink:hover {
+.dark   .sidecontentbox a.helplink:hover {
     background: #2780BF;
     background: -webkit-linear-gradient( top,#2780BF,#17659C );
     background:    -moz-linear-gradient( top,#2780BF,#17659C );
@@ -730,7 +734,7 @@ body.dark {
 /* ! Dark \ Container */
 
     /* ! Dark \ Container \ Sidebar */
-    .dark .side {
+    .dark   .side {
         background: url( https://i.imgur.com/oo9I0OR.png ) repeat #272727;
         border-width: 1px;
         border-style: none solid solid;
@@ -738,14 +742,14 @@ body.dark {
     }
 
         /* ! Dark \ Container \ Sidebar \ Search */
-        .dark .side .form-horizontal {
+        .dark   .side .form-horizontal {
             background: url( https://i.imgur.com/VgZAC3B.png ) repeat #191919;
             color: #EEE;
             border-bottom: 1px solid #161616;
             border-top: 1px solid #161616;
         }
 
-            .dark .side .form-control:focus { border-color: #8F4FAE; }
+            .dark   .side .form-control:focus { border-color: #8F4FAE; }
 
         /* ! Dark \ Container \ Sidebar \ Submission info */
         .dark   .titlebox.submissioninfo a { color: #399DE4; }
@@ -755,7 +759,7 @@ body.dark {
         }
 
         /* ! Dark \ Container \ Sidebar \ Titlebox */
-        .dark .titlebox {
+        .dark   .titlebox {
             background: url( https://i.imgur.com/VgZAC3B.png ) repeat #191919;
             color: #D5D5D5;
             border-bottom: 1px solid #161616;
@@ -767,14 +771,14 @@ body.dark {
             .dark   .titlebox .bottom a:hover { color: #B767DD; }
 
         /* ! Dark \ Container \ Sidebar \ Moderators */
-        .dark .accordion {
+        .dark   .accordion {
             background: url( https://i.imgur.com/VgZAC3B.png ) repeat #191919;
             color: #D5D5D5;
             border-bottom: 1px solid #161616;
             border-top: 1px solid #161616;
         }
 
-        .dark .side .title h1.alert-h1 { color: #E4E4E4; }
+        .dark   .side .title h1.alert-h1 { color: #E4E4E4; }
 
         .dark   .sidecontentbox ul.content,
         .dark   .sidecontentbox .content {
@@ -783,7 +787,7 @@ body.dark {
         }
 
     /* ! Dark \ Container \ Sitetable */
-    .dark .link {
+    .dark   .link {
         border-width: 1px;
         border-style: none none solid;
         border-color: #090909;
@@ -900,7 +904,7 @@ body.dark {
 
     /* ! Dark \ Container \ Submission form */
     .dark   .well { color: #D5D5D5; }
-        .dark .alert-info {
+        .dark   .alert-info {
             border-bottom: 1px dotted #181818;
             color: #D5D5D5;
         }
@@ -999,8 +1003,13 @@ body.light {
     .light  .btn-whoaverse-paging a:hover,
     .light  a.btn-whoaverse-paging:hover { color: #E3E3E3 !important; }
 
-.light  .side a.btn-whoaverse { color: #444; }
+.light  .side a.btn-whoaverse { color: #444 !important; }
 
+.light .side .btn-whoaverse {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
+}
 .light .side .btn-whoaverse:hover {
     background: #FCFCFC;
     background: -webkit-linear-gradient( top,#FCFCFC,#E1E1E1 );
@@ -1010,7 +1019,13 @@ body.light {
     border-color: #C3C3C3;
 }
 
-.light .side .btn-whoaverse-paging:hover {
+.light  .side .btn-whoaverse-paging {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: #EEE;
+}
+.light  .side .btn-whoaverse-paging:hover {
     background: #47B1FC;
     background: -webkit-linear-gradient( top,#47B1FC,#3797DC );
     background:    -moz-linear-gradient( top,#47B1FC,#3797DC );
@@ -1020,11 +1035,11 @@ body.light {
     color: #EEE;
 }
 
-.light .sidecontentbox a.helplink {
+.light  .sidecontentbox a.helplink {
     border-bottom: 2px solid transparent;
     color: #444;
 }
-.light .sidecontentbox a.helplink:hover {
+.light  .sidecontentbox a.helplink:hover {
     background: #FCFCFC;
     background: -webkit-linear-gradient( top,#FCFCFC,#E1E1E1 );
     background:    -moz-linear-gradient( top,#FCFCFC,#E1E1E1 );
@@ -1080,7 +1095,7 @@ body.light {
 /* ! Light \ Container */
 
     /* ! Light \ Container \ Sidebar */
-    .light .side {
+    .light  .side {
         background: url( https://i.imgur.com/76lSlYC.png ) repeat #FFF;
         border-width: 1px;
         border-style: none solid solid;
@@ -1088,12 +1103,12 @@ body.light {
     }
 
         /* ! Light \ Container \ Sidebar \ Search */
-        .light .side .form-horizontal {
+        .light  .side .form-horizontal {
             background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
             color: #EEE;
         }
 
-            .light .side .form-control:focus { border-color: #B767DD; }
+            .light  .side .form-control:focus { border-color: #B767DD; }
 
         /* ! Light \ Container \ Sidebar \ Submission info */
         .light  .titlebox.submissioninfo a { color: #47B1FC; }
@@ -1103,7 +1118,7 @@ body.light {
         }
 
         /* ! Light \ Container \ Sidebar \ Titlebox */
-        .light .titlebox {
+        .light  .titlebox {
             background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
             color: #EEE;
         }
@@ -1113,18 +1128,18 @@ body.light {
             .light  .titlebox .bottom a:hover { color: #FF8821; }
 
         /* ! Light \ Container \ Sidebar \ Moderators */
-        .light .accordion {
+        .light  .accordion {
             background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
             color: #EEE;
         }
 
-        .light .side .title h1.alert-h1 { color: #444; }
+        .light  .side .title h1.alert-h1 { color: #444; }
 
         .light  .sidecontentbox ul.content,
         .light  .sidecontentbox .content { border-top: 1px solid #999; }
 
     /* ! Light \ Container \ Sitetable */
-    .light .link {
+    .light  .link {
         border-width: 1px;
         border-style: none none solid;
         border-color: #BCBCBC;
@@ -1228,7 +1243,7 @@ body.light {
 
     /* ! Light \ Container \ Submission form */
     .light  .well { color: #333; }
-        .light .alert-info {
+        .light  .alert-info {
             border-bottom: 1px dotted #AAA;
             color: #5A5A5A;
         }
@@ -1289,4 +1304,3 @@ body.light {
 
 
 
- 
