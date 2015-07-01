@@ -1,4 +1,5 @@
-/* Noise backgrounds
+/*
+ * Noise backgrounds
  * -----------------
  * Changes all of the backgrounds equipped with a noise texture. Delete any lines
  * that aren't going to be customized. Replace the following:
@@ -16,7 +17,3 @@ body                              { background: url( BODY_BACKGROUND_URL ) repea
 .side .form-horizontal            { background: url( SEARCH_SECTION_URL  ) repeat; }
 .titlebox                         { background: url( SUB_DESCRIPTION_URL ) repeat; }
 .footer                           { background: url( FOOTER_URL          ) repeat; }
-
-
-
-

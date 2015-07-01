@@ -1,6 +1,7 @@
-/* Typogra 3 created by Nurdoidz (https://voat.co/u/Nurdoidz). Typogra is licensed under a
- * Creative Commons Attribution-ShareAlike 4.0 International License:
- * (http://creativecommons.org/licenses/by-sa/4.0/)
+/*
+ * Typogra 3 created by Nurdoidz (https://voat.co/u/Nurdoidz). Typogra is
+ * licensed under a Creative Commons Attribution-ShareAlike 4.0 International
+ * License: <http://creativecommons.org/licenses/by-sa/4.0/>
  */
 
 /* ! Core \ Body  */
@@ -396,7 +397,7 @@ body {
             color: #B767DD;
             text-decoration: none;
         }
-    
+
     /* ! Core \ Container \ Sitetable */
     .content {
         margin: 0 350px 0 0;
@@ -725,9 +726,9 @@ body.dark {
     }
 
     /* ! Dark \ Header \ Sub name */
-    
+
     /* ! Dark \ Header \ Tab menu */
-    
+
     /* ! Dark \ Header \ Account */
     .dark   #header-account a:hover { color: #399DE4; }
 
@@ -1086,9 +1087,9 @@ body.light {
     }
 
     /* ! Light \ Header \ Sub name */
-    
+
     /* ! Light \ Header \ Tab menu */
-    
+
     /* ! Light \ Header \ Account */
     .light  #header-account a:hover { color: #317FB7; }
 
@@ -1300,7 +1301,3 @@ body.light {
 /* Add plugins here. Copy and paste the contents of the plugins you want to use,
  * which are located in the 'Plugins' folder on Typogra's Github directory.
  */
-
-
-
-

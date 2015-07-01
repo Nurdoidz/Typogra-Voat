@@ -1,9 +1,12 @@
-/* Sticky announcment
+/*
+ * Sticky announcment
  * ------------------
  * Adds an announcement-like box to the top of the link listing. Supports up to
  * 125-140 characters. Disables itself when the sidebar disappears.
  *
- * To enable, add an H5 line to the sidebar text (using five '#'s) with your text. */
+ * To enable, add an H5 line to the sidebar text (using five '#'s) with your
+ * text.
+ */
 
 @media ( min-width: 1190px ) {
     #container > .content { margin-top: 32px; }
@@ -38,7 +41,3 @@
         border: 1px solid #161616;
     }
 }
-
-
-
-
