@@ -4,7 +4,7 @@
  * License: <http://creativecommons.org/licenses/by-sa/4.0/>
  */
 
-/* ! Core \ Body  */
+/* Core \ Body  */
 @import url( https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic );
 
 body {
@@ -12,7 +12,7 @@ body {
     font-size: 10px;
 }
 
-/* ! Core \ Markdown  */
+/* Core \ Markdown  */
 .md a:hover { text-decoration: none; }
 
 .md blockquote {
@@ -49,7 +49,7 @@ body {
 .titlebox .md h5,
 .titlebox .md h6 { font-size: 14px; }
 
-/* ! Core \ Buttons  */
+/* Core \ Buttons  */
 .btn-whoaverse,
 .btn-whoaverse-paging,
 .btn-whoaverse-medium,
@@ -104,7 +104,7 @@ body {
 }
 .sidecontentbox a.helplink:hover { box-shadow: 0 1px 2px hsla( 0,0%,0%,0.6 ); }
 
-/* ! Core \ Sprites  */
+/* Core \ Sprites  */
 .arrow-upvote,
 .arrow-upvoted,
 .arrow-downvote,
@@ -124,7 +124,7 @@ body {
     width: 16px;
 }
 
-/* ! Core \ Header  */
+/* Core \ Header  */
 #header {
     background: url( https://i.imgur.com/wc7qUVc.png ) 50% 50%;
     height: 200px;
@@ -148,7 +148,7 @@ body {
             padding-left: 112px;
         }
 
-        /* ! Core \ Header \ Sub menu  */
+        /* Core \ Header \ Sub menu  */
           .whoaSubscriptionMenu li ul {
             border: 1px solid;
             border-color: #333 #222 #222;
@@ -169,7 +169,7 @@ body {
             color: #D5D5D5;
         }
 
-        /* ! Core \ Header \ Sub name */
+        /* Core \ Header \ Sub name */
         .pagename {
             font-size: 24px;
             letter-spacing: -1px;
@@ -192,7 +192,7 @@ body {
                 text-decoration: none;
             }
 
-        /* ! Core \ Header \ Tab menu */
+        /* Core \ Header \ Tab menu */
         .tabmenu { font-size: 16px; }
             .tabmenu li { text-transform: uppercase; }
                 .tabmenu li a {
@@ -255,7 +255,7 @@ body {
                     border-color: #B767DD;
                 }
 
-        /* ! Core \ Header \ Account */
+        /* Core \ Header \ Account */
         .logged-in {
             color: #D5D5D5;
             background: none;
@@ -276,7 +276,7 @@ body {
                 visibility: hidden;
             }
 
-/* ! Core \ Container */
+/* Core \ Container */
 #container {
     background: none;
     border: 0;
@@ -284,14 +284,14 @@ body {
     padding: 0;
 }
 
-    /* ! Core \ Container \ Sidebar */
+    /* Core \ Container \ Sidebar */
     .side {
         margin: 0;
         padding: 20px;
         width: 340px;
     }
 
-        /* ! Core \ Container \ Sidebar \ Search */
+        /* Core \ Container \ Sidebar \ Search */
         .side .form-horizontal {
             margin: 0 -20px 10px;
             padding: 20px;
@@ -308,7 +308,7 @@ body {
             }
             .side .form-horizontal label { font-size: 10px; }
 
-        /* ! Core \ Container \ Sidebar \ Submission info */
+        /* Core \ Container \ Sidebar \ Submission info */
         .alert-h2 {
             border-width: 1px;
             border-color: #090909;
@@ -316,7 +316,7 @@ body {
             box-shadow: 0 1px 0 #272727;
         }
 
-        /* ! Core \ Container \ Sidebar \ Titlebox */
+        /* Core \ Container \ Sidebar \ Titlebox */
         .titlebox {
             margin: 10px -20px 0;
             padding: 30px 20px;
@@ -355,7 +355,7 @@ body {
                 padding: 10px 0 0;
             }
 
-        /* ! Core \ Container \ Sidebar \ Moderators */
+        /* Core \ Container \ Sidebar \ Moderators */
         .titlebox form.toggle,
         .leavemoderator {
             background: inherit;
@@ -398,7 +398,7 @@ body {
             text-decoration: none;
         }
 
-    /* ! Core \ Container \ Sitetable */
+    /* Core \ Container \ Sitetable */
     .content {
         margin: 0 350px 0 0;
         padding: 20px 20px 25px;
@@ -447,7 +447,7 @@ body {
 
         .even { background: none; }
 
-    /* ! Core \ Container \ Comments */
+    /* Core \ Container \ Comments */
     .menuarea .selected a:hover {
         color: #317FB7;
         text-decoration: underline;
@@ -511,7 +511,7 @@ body {
         padding: 10px;
     }
 
-    /* ! Core \ Container \ Submission form */
+    /* Core \ Container \ Submission form */
     .well {
         background: none;
         border: 0;
@@ -526,12 +526,12 @@ body {
             padding: 10px;
         }
 
-/* ! Core \ Footer */
+/* Core \ Footer */
 .footer:before {
     color: #D5D5D5;
-    content: "/v/Typogra v3.0 theme"; /* Do not remove! */
+    content: "Theme: /v/Typogra (v3.0)"; /* Do not remove! */
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     margin: 0 0 15px;
 }
 .footer {
@@ -548,7 +548,7 @@ body {
 
 
 
-/* ! Dark \ Body */
+/* Dark \ Body */
 body.dark {
     background: url( https://i.imgur.com/cQxllB7.png ) repeat #1E1E1E;
     color: #D5D5D5;
@@ -556,12 +556,12 @@ body.dark {
 
 .dark   h2 { color: #D5D5D5; }
 
-/* ! Dark \ Links */
+/* Dark \ Links */
 .dark   a         { color: #399DE4; }
 .dark   a:hover   { color: #B767DD; }
 .dark   a:visited { color: #399DE4; }
 
-/* ! Dark \ Horizontal rules */
+/* Dark \ Horizontal rules */
 .dark   hr {
     border-width: 1px;
     border-style: none none solid;
@@ -571,7 +571,7 @@ body.dark {
 
 .dark   .horizontal-line { border-bottom-color: #161616; }
 
-/* ! Dark \ Code blocks */
+/* Dark \ Code blocks */
 .dark   pre,
 .dark   code {
     color: #EEE;
@@ -580,7 +580,7 @@ body.dark {
 }
 .dark   pre code { border: 0; }
 
-/* ! Dark \ Markdown */
+/* Dark \ Markdown */
 .dark   .md a { color: #399DE4; }
 
 .dark   .md blockquote {
@@ -608,7 +608,7 @@ body.dark {
 }
 .dark   .link .usertext .md pre code { border: 0; }
 
-/* ! Dark \ Buttons */
+/* Dark \ Buttons */
 .dark   .btn-whoaverse,
 .dark   .btn-whoaverse-paging,
 .dark   .btn-whoaverse-medium,
@@ -688,7 +688,7 @@ body.dark {
     color: #DDD;
 }
 
-/* ! Dark \ Sprites */
+/* Dark \ Sprites */
 .dark   .arrow-upvote,
 .dark   .comment .arrow-upvote    { background-position:  -64px 0; }
 .dark   .arrow-upvoted,
@@ -705,7 +705,7 @@ body.dark {
 .dark   .expando-button.selftext.loading         { background-position: -64px -48px; }
 .dark   .expando-button.selftext.loading:hover   { background-position: -80px -48px; }
 
-/* ! Dark \ Header */
+/* Dark \ Header */
 .dark   #header-container,
 .dark   #sr-header-area { background: url( https://i.imgur.com/iGhWm8v.png ) repeat #272727; }
     .dark   #sr-header-area .selected a { color: #399DE4; }
@@ -715,7 +715,7 @@ body.dark {
         background: #2780BF;
     }
 
-    /* ! Dark \ Header \ Sub menu */
+    /* Dark \ Header \ Sub menu */
     .dark   .whoaSubscriptionMenu li ul li a:hover {
         background: #2780BF;
         background: -webkit-linear-gradient( top,#2780BF,#17659C );
@@ -725,16 +725,16 @@ body.dark {
         color: #FFF !important;
     }
 
-    /* ! Dark \ Header \ Sub name */
+    /* Dark \ Header \ Sub name */
 
-    /* ! Dark \ Header \ Tab menu */
+    /* Dark \ Header \ Tab menu */
 
-    /* ! Dark \ Header \ Account */
+    /* Dark \ Header \ Account */
     .dark   #header-account a:hover { color: #399DE4; }
 
-/* ! Dark \ Container */
+/* Dark \ Container */
 
-    /* ! Dark \ Container \ Sidebar */
+    /* Dark \ Container \ Sidebar */
     .dark   .side {
         background: url( https://i.imgur.com/oo9I0OR.png ) repeat #272727;
         border-width: 1px;
@@ -742,7 +742,7 @@ body.dark {
         border-color: #161616;
     }
 
-        /* ! Dark \ Container \ Sidebar \ Search */
+        /* Dark \ Container \ Sidebar \ Search */
         .dark   .side .form-horizontal {
             background: url( https://i.imgur.com/VgZAC3B.png ) repeat #191919;
             color: #EEE;
@@ -752,14 +752,14 @@ body.dark {
 
             .dark   .side .form-control:focus { border-color: #8F4FAE; }
 
-        /* ! Dark \ Container \ Sidebar \ Submission info */
+        /* Dark \ Container \ Sidebar \ Submission info */
         .dark   .titlebox.submissioninfo a { color: #399DE4; }
         .dark   .titlebox.submissioninfo a:hover {
             color: #B767DD;
             text-decoration: none;
         }
 
-        /* ! Dark \ Container \ Sidebar \ Titlebox */
+        /* Dark \ Container \ Sidebar \ Titlebox */
         .dark   .titlebox {
             background: url( https://i.imgur.com/VgZAC3B.png ) repeat #191919;
             color: #D5D5D5;
@@ -771,7 +771,7 @@ body.dark {
             .dark   .titlebox .bottom a { color: #399DE4; }
             .dark   .titlebox .bottom a:hover { color: #B767DD; }
 
-        /* ! Dark \ Container \ Sidebar \ Moderators */
+        /* Dark \ Container \ Sidebar \ Moderators */
         .dark   .accordion {
             background: url( https://i.imgur.com/VgZAC3B.png ) repeat #191919;
             color: #D5D5D5;
@@ -787,7 +787,7 @@ body.dark {
             border-top: 1px solid #090909;
         }
 
-    /* ! Dark \ Container \ Sitetable */
+    /* Dark \ Container \ Sitetable */
     .dark   .link {
         border-width: 1px;
         border-style: none none solid;
@@ -844,7 +844,7 @@ body.dark {
 
         .dark   .link .flat-list li a { color: #8D8D8D; }
 
-    /* ! Dark \ Container \ Comments */
+    /* Dark \ Container \ Comments */
     .dark   .menuarea .selected a:hover { color: #B767DD; }
 
     .dark   .commenttextarea,
@@ -903,20 +903,20 @@ body.dark {
             background: none;
         }
 
-    /* ! Dark \ Container \ Submission form */
+    /* Dark \ Container \ Submission form */
     .dark   .well { color: #D5D5D5; }
         .dark   .alert-info {
             border-bottom: 1px dotted #181818;
             color: #D5D5D5;
         }
 
-/* ! Dark \ Footer */
+/* Dark \ Footer */
 .dark   .footer { background: url( https://i.imgur.com/oo9I0OR.png ) repeat #272727; }
 
 
 
 
-/* ! Light \ Body */
+/* Light \ Body */
 body.light {
     background: url( https://i.imgur.com/7OM2E3w.png ) repeat #EEE;
     color: #333;
@@ -924,12 +924,12 @@ body.light {
 
 .light  h2 { color: #333; }
 
-/* ! Light \ Links */
+/* Light \ Links */
 .light  a         { color: #317FB7; }
 .light  a:hover   { color: #429FE1; }
 .light  a:visited { color: #317FB7; }
 
-/* ! Light \ Horizontal rules */
+/* Light \ Horizontal rules */
 .light  hr {
     border-width: 1px;
     border-style: none none solid;
@@ -939,7 +939,7 @@ body.light {
 
 .light  .horizontal-line { border-bottom-color: #E9E9E9; }
 
-/* ! Light \ Code blocks */
+/* Light \ Code blocks */
 .light  pre,
 .light  code {
     background: #F5F5F5;
@@ -948,7 +948,7 @@ body.light {
 }
 .light  pre code { border: 0; }
 
-/* ! Light \ Markdown */
+/* Light \ Markdown */
 .light  .md a { color: #277CCB; }
 
 .light  .md blockquote {
@@ -971,7 +971,7 @@ body.light {
 }
 .light  .link .usertext .md pre code { border: 0; }
 
-/* ! Light \ Buttons */
+/* Light \ Buttons */
 .light  .btn-whoaverse,
 .light  .btn-whoaverse-paging,
 .light  .btn-whoaverse-medium,
@@ -1049,7 +1049,7 @@ body.light {
     border-color: #C3C3C3;
 }
 
-/* ! Light \ Sprites */
+/* Light \ Sprites */
 .light  .arrow-upvote,
 .light  .comment .arrow-upvote    { background-position:    0   0; }
 .light  .arrow-upvoted,
@@ -1066,7 +1066,7 @@ body.light {
 .light  .expando-button.selftext.loading         { background-position:   0   -48px; }
 .light  .expando-button.selftext.loading:hover   { background-position: -16px -48px; }
 
-/* ! Light \ Header */
+/* Light \ Header */
 .light  #header-container,
 .light  #sr-header-area { background: url( https://i.imgur.com/UzYjq0f.png ) repeat; }
     .light  #sr-header-area .selected a { color: #317FB7; }
@@ -1076,7 +1076,7 @@ body.light {
         background: #317FB7;
     }
 
-    /* ! Light \ Header \ Sub menu */
+    /* Light \ Header \ Sub menu */
     .light  .whoaSubscriptionMenu li ul li a:hover {
         background: #47B1FC;
         background: -webkit-linear-gradient( top,#47B1FC,#3797DC );
@@ -1086,16 +1086,16 @@ body.light {
         color: #FFF !important;
     }
 
-    /* ! Light \ Header \ Sub name */
+    /* Light \ Header \ Sub name */
 
-    /* ! Light \ Header \ Tab menu */
+    /* Light \ Header \ Tab menu */
 
-    /* ! Light \ Header \ Account */
+    /* Light \ Header \ Account */
     .light  #header-account a:hover { color: #317FB7; }
 
-/* ! Light \ Container */
+/* Light \ Container */
 
-    /* ! Light \ Container \ Sidebar */
+    /* Light \ Container \ Sidebar */
     .light  .side {
         background: url( https://i.imgur.com/76lSlYC.png ) repeat #FFF;
         border-width: 1px;
@@ -1103,7 +1103,7 @@ body.light {
         border-color: #D7D7D7;
     }
 
-        /* ! Light \ Container \ Sidebar \ Search */
+        /* Light \ Container \ Sidebar \ Search */
         .light  .side .form-horizontal {
             background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
             color: #EEE;
@@ -1111,14 +1111,14 @@ body.light {
 
             .light  .side .form-control:focus { border-color: #B767DD; }
 
-        /* ! Light \ Container \ Sidebar \ Submission info */
+        /* Light \ Container \ Sidebar \ Submission info */
         .light  .titlebox.submissioninfo a { color: #47B1FC; }
         .light  .titlebox.submissioninfo a:hover {
             color: #B767DD;
             text-decoration: none;
         }
 
-        /* ! Light \ Container \ Sidebar \ Titlebox */
+        /* Light \ Container \ Sidebar \ Titlebox */
         .light  .titlebox {
             background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
             color: #EEE;
@@ -1128,7 +1128,7 @@ body.light {
             .light  .titlebox .bottom a { color: #47B1FC; }
             .light  .titlebox .bottom a:hover { color: #FF8821; }
 
-        /* ! Light \ Container \ Sidebar \ Moderators */
+        /* Light \ Container \ Sidebar \ Moderators */
         .light  .accordion {
             background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222;
             color: #EEE;
@@ -1139,7 +1139,7 @@ body.light {
         .light  .sidecontentbox ul.content,
         .light  .sidecontentbox .content { border-top: 1px solid #999; }
 
-    /* ! Light \ Container \ Sitetable */
+    /* Light \ Container \ Sitetable */
     .light  .link {
         border-width: 1px;
         border-style: none none solid;
@@ -1191,7 +1191,7 @@ body.light {
 
         .light  .link .flat-list li a { color: #6A6A6A; }
 
-    /* ! Light \ Container \ Comments */
+    /* Light \ Container \ Comments */
     .light  .commenttextarea,
     .light  .well .form-control,
     .light  .comment .form-control {
@@ -1242,20 +1242,20 @@ body.light {
             background: none;
         }
 
-    /* ! Light \ Container \ Submission form */
+    /* Light \ Container \ Submission form */
     .light  .well { color: #333; }
         .light  .alert-info {
             border-bottom: 1px dotted #AAA;
             color: #5A5A5A;
         }
 
-/* ! Light \ Footer */
+/* Light \ Footer */
 .light  .footer { background: url( https://i.imgur.com/H2SAgdc.png ) repeat #222; }
 
 
 
 
-/* ! Mobile */
+/* Mobile */
 @media ( max-width: 870px ) {
     .content { margin-right: 0; }
         .side { width: 300px; }
@@ -1298,6 +1298,7 @@ body.light {
     }
 }
 
-/* Add plugins here. Copy and paste the contents of the plugins you want to use,
+/*
+ * Add plugins here. Copy and paste the contents of the plugins you want to use,
  * which are located in the 'Plugins' folder on Typogra's Github directory.
  */
