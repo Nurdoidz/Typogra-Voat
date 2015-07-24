@@ -1,0 +1,10 @@
+/*
+ * Change Voat Logo
+ * ----------------
+ * Used to change the Voat Logo.
+ */
+
+#header-img {
+    background: url( IMAGE_URL );
+    padding-left: 112px;
+}
