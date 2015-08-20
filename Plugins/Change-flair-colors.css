@@ -1,0 +1,134 @@
+/*
+ * Flairs
+ * ------
+ * Changes the flair colors. Remove any unused colors. Replace the following:
+ *  - 'COLOR': The flair's CSS name.
+ */
+
+.flair {
+    display: inline-block;
+    min-width: 12em;
+    text-align: center;
+}
+    /* dark theme */
+    .dark .GRAY {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 0,0%,40% );
+        background: hsla( 0,0%,53%,0.7 );
+        color: hsl( 0,0%,92% );
+    }
+    .dark .BROWN {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 21,36%,29% );
+        background: hsla( 21,36%,38%,0.7 );
+        color: hsl( 21,36%,92% );
+    }
+    .dark .RED {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 4,59%,32% );
+        background: hsla( 4,68%58%,0.7 );
+        color: hsl( 4,68%,92% );
+    }
+    .dark .ORANGE {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 18,84%,30% );
+        background: hsla( 18,84%,56%,0.7 );
+        color: hsl( 18,84%,92% );
+    }
+    .dark .YELLOW {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 36,84%,30% );
+        background: hsla( 36,84%,56%,0.7 );
+        color: hsl( 36,84%,92% );
+    }
+    .dark .GREEN {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 120,59%,28% );
+        background: hsla( 120,59%,44%,0.7 );
+        color: hsl( 120,59%,92% );
+    }
+    .dark .CYAN {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 194,71%,37% );
+        background: hsla( 194,71%,58%,0.7 );
+        color: hsl( 194,71%,92% );
+    }
+    .dark .BLUE {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 220,66%,41% );
+        background: hsla( 220,66%,61%,0.7 );
+        color: hsl( 220,66%,92% );
+    }
+    .dark .PURPLE {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 265,66%,41% );
+        background: hsla( 265,66%,61%,0.7 );
+        color: hsl( 265,66%,92% );
+    }
+    .dark .MAGENTA {
+        box-shadow: 0px 1px 3px hsla( 0,0%,0%,0.6 ) inset;
+        border: 1px solid hsl( 310,66%,35% );
+        background: hsla( 310,66%,61%,0.7 );
+        color: hsl( 310,66%,92% );
+    }
+    /* light theme */
+    .light .GRAY {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 0,0%,40% );
+        background: hsla( 0,0%,76%,0.7 );
+        color: hsl( 0,0%,31% );
+    }
+    .light .BROWN {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 21,38%,27% );
+        background: hsla( 21,38%,44%,0.7 );
+        color: hsl( 21,38%,19% );
+    }
+    .light .RED {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 4,59%,29% );
+        background: hsla( 4,74%,57%,0.7 );
+        color: hsl( 4,59%,21% );
+    }
+    .light .ORANGE {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 18,84%,36% );
+        background: hsla( 18,93%,62%,0.7 );
+        color: hsl( 18,72%,25% );
+    }
+    .light .YELLOW {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 36,84%,30% );
+        background: hsla( 36,88%,54%,0.7 );
+        color: hsl( 36,71%,21% );
+    }
+    .light .GREEN {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 120,59%,28% );
+        background: hsla( 120,59%,44%,0.7 );
+        color: hsl( 120,50%,18% );
+    }
+    .light .CYAN {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 194,78%,41% );
+        background: hsla( 194,78%,66%,0.7 );
+        color: hsl( 194,50%,18% );
+    }
+    .light .BLUE {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 220,93%,54% );
+        background: hsla( 220,93%,63%,0.7 );
+        color: hsl( 220,76%,24% );
+    }
+    .light .PURPLE {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 265,66%,53% );
+        background: hsla( 265,66%,61%,0.7 );
+        color: hsl( 265,76%,24% );
+    }
+    .light .MAGENTA {
+        box-shadow: 0px 1px 2px hsla( 0,0%,0%,0.7 ) inset;
+        border: 1px solid hsl( 310,66%,35% );
+        background: hsla( 310,66%,56%,0.7 );
+        color: hsl( 310,57%,27% );
+    }
